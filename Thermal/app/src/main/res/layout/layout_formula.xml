@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/top_back">
+        <ImageView
+            android:id="@+id/Formula_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingTop="12dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="12dp"
+            android:src="@drawable/back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热处理公式"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+        <!--<include layout="@layout/layout_back"/>-->
+       <!--&lt;!&ndash; <include layout="@layout/layout_search"/>&ndash;&gt;-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_formula"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="公式"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            auto:text="When \\(a \\ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\)
+            and they are $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$"
+            auto:engine="MathJax">
+        </io.github.kexanie.library.MathView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formula two: from Java String with KaTeX"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            auto:engine="KaTeX"
+            >
+        </io.github.kexanie.library.MathView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formula three: render MathML code with MathJax"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            auto:engine="MathJax"
+            >
+        </io.github.kexanie.library.MathView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="弹性极限公式"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            auto:text=" $$ σ_e = {F_e \\over A_0}.$$"
+            auto:engine="MathJax">
+        </io.github.kexanie.library.MathView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="屈服点公式"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            auto:text=" $$ σ_s = {F_s \\over A_0}.$$"
+            auto:engine="MathJax">
+        </io.github.kexanie.library.MathView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="抗拉强度公式"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            auto:text=" $$ σ_b = {F_b \\over A_0}.$$"
+            auto:engine="MathJax">
+        </io.github.kexanie.library.MathView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="布氏硬度公式"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_seven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            auto:text=" $$ HB = {P \\over A_凹}.$$"
+            auto:engine="MathJax">
+        </io.github.kexanie.library.MathView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="洛氏硬度公式"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_eight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            auto:text=" $$ HR = {{K-(h_3-h_1)} \\over 0.002}.$$"
+            auto:engine="MathJax">
+        </io.github.kexanie.library.MathView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="维氏硬度公式"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_nine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            auto:text=" $$ HV = {1.8544F \\over d^2}.$$"
+            auto:engine="MathJax">
+        </io.github.kexanie.library.MathView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="伸长率公式"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            auto:text=" $$ δ = {{(L_1-L_0) }\\over L_0}.$$"
+            auto:engine="MathJax">
+        </io.github.kexanie.library.MathView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="断面收缩率公式"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_eleven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            auto:text=" $$ ψ = {{(S_0-S_u)} \\over S_0}.$$"
+            auto:engine="MathJax">
+        </io.github.kexanie.library.MathView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="致密度"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_twelve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            auto:text=" $$ 致密度 = {原子占有体积 \\over 晶胞体积}.$$"
+            auto:engine="MathJax">
+        </io.github.kexanie.library.MathView>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

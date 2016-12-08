@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhang.administrator.thermal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/xiaohui"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Acitivity.Splash_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".Acitivity.Set_Activity"/>
+        <activity android:name=".Acitivity.MetalCategory_Activity"/>
+        <activity android:name=".Acitivity.LiXueXingNeng_Activity"/>
+        <activity android:name=".Acitivity.JinXiangZhuZhi_Activity"/>
+        <activity android:name=".Acitivity.MainActivity"/>
+        <activity android:name=".Acitivity.Aluminum_Activity"/>
+        <activity android:name=".Acitivity.Iron_Activity"/>
+        <activity android:name=".Acitivity.Steel_Activity"/>
+        <activity android:name=".Acitivity.Login_Activity"/>
+        <activity android:name=".Acitivity.Formula_Activity"/>
+        <activity android:name=".Adapter.Search"/>
+        <activity android:name=".ItemActivity.First_Item_Activity"/>
+        <activity android:name=".Acitivity.AboutProductActivity"/>
+        <activity android:name=".Acitivity.FeedbackActivity"/>
+        <activity android:name=".Acitivity.RegisterActivity"/>
+        <activity android:name=".Acitivity.WebViewActivity"/>
+        <activity android:name=".Acitivity.FirstVideoActivity"/>
+        <activity android:name=".ItemActivity.SecondActivity"/>
+        <activity android:name=".ItemActivity.Third_Item_Activity"/>
+        <activity android:name=".ItemActivity.Fourth_Item_Activity"/>
+        <activity android:name=".ItemActivity.Five_Item_Activity"/>
+        <activity android:name=".ItemActivity.Six_Item_Activity"/>
+        <activity android:name=".Acitivity.SecondVideoActivity"/>
+        <activity android:name=".Acitivity.ThirdVideoActivity"/>
+        <activity android:name=".Acitivity.FourthVideoActivity"/>
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--推送权限-->
+    <!--允许读取手机状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许接收屏幕解锁广播 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <!--允许接收开机广播 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 其他权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+
+</manifest>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Thermal</string>
+    <string name="tv_content">热处理的目的就是为了改善材料的组织和性能，常用的热处理方法有退火、正火、淬火及回火</string>
+    <string name="MetalCategory">金属类型</string>
+    <string name="MetalPerformence">金属性能</string>
+    <string name="Jin">金相组织</string>
+    <string name="Formula">公式</string>
+    <string name="feedback">产品处于开发期，希望各位使用者可以多提建议。非常感谢您的使用。 若有问题，
+        欢迎联系QQ852333743沟通，我们会在第一时间进行修改。</string>
+    <string name="Thermal">热处理</string>
+
+
+</resources>

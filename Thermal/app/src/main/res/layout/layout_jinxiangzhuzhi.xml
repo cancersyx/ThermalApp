@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/top_back">
+
+        <ImageView
+            android:id="@+id/IB_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingTop="12dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="12dp"
+            android:src="@drawable/back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金相组织"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--奥氏体-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aoshiti"/>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:text="奥氏体"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="碳与合金元素溶解在γ-fe中的固溶体，仍保持γ-fe的面心立方晶格。晶界比较直，呈规则多边形；淬火钢中残余奥氏体分布在马氏体间的空隙处"/>
+                </LinearLayout >
+            </LinearLayout>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_height="1px"
+                android:layout_width="match_parent"
+                android:background="#66CCFF" />
+
+
+            <!--铁素体-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tiesuti"/>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:text="铁素体"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="铁素体是碳溶解在α-Fe中的间隙固溶体，常用符号F表示。具有体心立方晶格，
+        其溶碳能力很低，常温下仅能溶解为0.0008%的碳，在727℃时最大的溶碳能力为0.02%。[1] 称为铁素体或α固溶体，
+        用α或F表示，α常用在相图标注中，F在行文中常用。亚共析成分的奥氏体通过先共析析出形成铁素体。"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_height="1px"
+                android:layout_width="match_parent"
+                android:background="#66CCFF" />
+
+            <!--渗碳体-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shentanti"/>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:text="渗碳体"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="渗碳体（cementite）是铁与碳形成的金属化合物，其化学式为Fe3C。渗碳体的含碳量为ωc=6.69%，熔点为1227℃。其晶格为复杂的正交晶格，硬度很高HBW=800，塑性、韧性几乎为零，脆性很大。在铁碳合金中有不同形态的渗碳体，其数量、形态与分布对铁碳合金的性能有直接影响。分为一次渗碳体（从液体相中析出）、二次渗碳体（从奥氏体中析出）和三次渗碳体（从铁素体中析出）。"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_height="1px"
+                android:layout_width="match_parent"
+                android:background="#66CCFF" />
+
+            <!--奥氏体-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mashiti"/>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:text="马氏体"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="马氏体是黑色金属材料的组织名称，是碳在α-Fe中的过饱和固溶体。它具有片状和板条状，但是在实验室观察中，我们一般发现其组织表现为针状。体心四方结构。一般在中高碳钢加速冷却下可以获得该组织。具有高强度和高硬度。"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_height="1px"
+                android:layout_width="match_parent"
+                android:background="#66CCFF" />
+
+            <!--索氏体-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/suoshiti"/>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:text="索氏体"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="钢经过正火或等温转变后的铁素体和渗碳体的机械混合物，其实质还是珠光体。但比珠光体组织细。将淬火钢在650-600℃进行回火，所得到的索氏体称为回火索氏体（tempered sorbite）。回火索氏体中的碳化物分散度很大，呈球状。故回火索氏体比索氏体具有更好的机械性能。"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_height="1px"
+                android:layout_width="match_parent"
+                android:background="#66CCFF" />
+
+            <!--上贝氏体-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shangbeishiti"/>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:text="上贝氏体"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="550～350℃范围内形成的贝氏体称为上贝氏体，金相组织呈羽毛状，脆性，硬度较高。500倍光学显微镜下基本能够识别清楚。
+上贝氏体多呈羽毛状特征，光镜下分辨不清楚铁素体与渗碳体两相，渗碳体分布在铁素体条之间，碳含量低时，碳化物沿条间呈不连续的粒状或链珠状分布，碳含量高时，碳化物呈杆状甚至连续状分布。电镜下:条状铁素体大致平行，铁素体条间分布与铁素体轴相平行的细条状渗碳体，铁素体条内有较高的位错密度，为一束大致平行的自奥氏体晶界长入奥氏体晶内的铁素体。"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_height="1px"
+                android:layout_width="match_parent"
+                android:background="#66CCFF" />
+
+            <!--残余奥氏体-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/canyu"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="马氏体在转变时，奥氏体没有全部转变成功，还有少量的未发生转变的奥氏体"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_height="1px"
+                android:layout_width="match_parent"
+                android:background="#66CCFF" />
+
+            <!--奥氏体-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aoshiti"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="碳与合金元素溶解在γ-fe中的固溶体，仍保持γ-fe的面心立方晶格。晶界比较直，呈规则多边形；淬火钢中残余奥氏体分布在马氏体间的空隙处"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_height="1px"
+                android:layout_width="match_parent"
+                android:background="#66CCFF" />
+
+            <!--&lt;!&ndash;奥氏体&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/aoshiti"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="碳与合金元素溶解在γ-fe中的固溶体，仍保持γ-fe的面心立方晶格。晶界比较直，呈规则多边形；淬火钢中残余奥氏体分布在马氏体间的空隙处"/>-->
+            <!--</LinearLayout>-->
+            <!--<View-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:layout_height="1px"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:background="#66CCFF" />-->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
