@@ -2,8 +2,6 @@ package com.zhang.administrator.thermal;
 
 import android.app.Application;
 
-import cn.bmob.v3.Bmob;
-
 /**
  * Created by Administrator on 2016/5/24.
  */
