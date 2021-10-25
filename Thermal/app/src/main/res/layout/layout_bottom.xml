@@ -1,34 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
-<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="55dp"
+    android:layout_alignParentBottom="true"
+    android:background="#F2F2F2"
+    android:id="@+id/ll_bottom_bar"
+    android:orientation="horizontal">
+
     <Button
-        android:id="@+id/discovery"
+        android:id="@+id/btn_course"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/btn_style"
-        android:textSize="18sp"
+        android:text="课程"
         android:textColor="@color/colorWhite"
-        android:text="发现"/>
+        android:textSize="18sp" />
+
     <View
         android:layout_width="1dip"
         android:layout_height="match_parent"
-        android:background="#66CCFF"
         android:layout_gravity="center_horizontal"
-        />
+        android:background="#66CCFF" />
+
     <Button
-        android:id="@+id/set"
+        android:id="@+id/btn_exercise"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        android:textSize="18sp"
         android:background="@drawable/btn_style"
+        android:text="习题"
         android:textColor="@color/colorWhite"
-        android:text="设置"/>
-</LinearLayout>
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#66CCFF" />
+
+    <Button
+        android:id="@+id/btn_discovery"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/btn_style"
+        android:text="发现"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#66CCFF" />
+
+    <Button
+        android:id="@+id/btn_mine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/btn_style"
+        android:text="我的"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
 </LinearLayout>

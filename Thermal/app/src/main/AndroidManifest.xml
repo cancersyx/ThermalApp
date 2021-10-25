@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".acitivity.SplashActivity">
+        <activity android:name=".ui.acitivity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,31 +16,31 @@
             </intent-filter>
         </activity>
         
-        <activity android:name=".acitivity.SetActivity"/>
-        <activity android:name=".acitivity.MetalCategoryActivity"/>
-        <activity android:name=".acitivity.LiXueXingNengActivity"/>
-        <activity android:name=".acitivity.JinXiangZhuZhiActivity"/>
-        <activity android:name=".acitivity.MainActivity"/>
-        <activity android:name=".acitivity.AluminumActivity"/>
-        <activity android:name=".acitivity.IronActivity"/>
-        <activity android:name=".acitivity.SteelActivity"/>
-        <activity android:name=".acitivity.LoginActivity"/>
-        <activity android:name=".acitivity.FormulaActivity"/>
-        <activity android:name=".acitivity.SearchActivity"/>
-        <activity android:name=".acitivity.FirstItemActivity"/>
-        <activity android:name=".acitivity.AboutProductActivity"/>
-        <activity android:name=".acitivity.FeedbackActivity"/>
-        <activity android:name=".acitivity.RegisterActivity"/>
-        <activity android:name=".acitivity.WebViewActivity"/>
-        <activity android:name=".acitivity.FirstVideoActivity"/>
-        <activity android:name=".acitivity.SecondActivity"/>
-        <activity android:name=".acitivity.ThirdItemActivity"/>
-        <activity android:name=".acitivity.FourthItemActivity"/>
-        <activity android:name=".acitivity.FiveItemActivity"/>
-        <activity android:name=".acitivity.SixItemActivity"/>
-        <activity android:name=".acitivity.SecondVideoActivity"/>
-        <activity android:name=".acitivity.ThirdVideoActivity"/>
-        <activity android:name=".acitivity.FourthVideoActivity"/>
+        <activity android:name=".ui.mine.SettingActivity"/>
+        <activity android:name=".ui.acitivity.MetalCategoryActivity"/>
+        <activity android:name=".ui.acitivity.LiXueXingNengActivity"/>
+        <activity android:name=".ui.acitivity.JinXiangZhuZhiActivity"/>
+        <activity android:name=".ui.acitivity.MainActivity"/>
+        <activity android:name=".ui.acitivity.AluminumActivity"/>
+        <activity android:name=".ui.acitivity.IronActivity"/>
+        <activity android:name=".ui.acitivity.SteelActivity"/>
+        <activity android:name=".ui.mine.LoginActivity"/>
+        <activity android:name=".ui.acitivity.FormulaActivity"/>
+        <activity android:name=".ui.acitivity.SearchActivity"/>
+        <activity android:name=".ui.acitivity.FirstItemActivity"/>
+        <activity android:name=".ui.mine.AboutProductActivity"/>
+        <activity android:name=".ui.mine.FeedbackActivity"/>
+        <activity android:name=".ui.mine.RegisterActivity"/>
+        <activity android:name=".ui.acitivity.WebViewActivity"/>
+        <activity android:name=".ui.acitivity.FirstVideoActivity"/>
+        <activity android:name=".ui.acitivity.SecondActivity"/>
+        <activity android:name=".ui.acitivity.ThirdItemActivity"/>
+        <activity android:name=".ui.acitivity.FourthItemActivity"/>
+        <activity android:name=".ui.acitivity.FiveItemActivity"/>
+        <activity android:name=".ui.acitivity.SixItemActivity"/>
+        <activity android:name=".ui.acitivity.SecondVideoActivity"/>
+        <activity android:name=".ui.acitivity.ThirdVideoActivity"/>
+        <activity android:name=".ui.acitivity.FourthVideoActivity"/>
 
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
