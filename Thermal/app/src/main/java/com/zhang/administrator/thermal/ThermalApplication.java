@@ -16,7 +16,7 @@ public class ThermalApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Bmob.initialize(this, APPID);
+        //Bmob.initialize(this, APPID);
 
     }
 }

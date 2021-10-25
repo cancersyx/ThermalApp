@@ -13,9 +13,6 @@ import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Parcelable;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,6 +26,9 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
 import com.zhang.administrator.thermal.R;
+
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 
 /**
@@ -145,7 +145,8 @@ public class SlideShowView extends FrameLayout {
             imageViewsList.add(view);
 
             ImageView dotView =  new ImageView(context);
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT,
+                    LayoutParams.WRAP_CONTENT);
             params.leftMargin = 4;
             params.rightMargin = 4;
             dotLayout.addView(dotView, params);
@@ -162,7 +163,7 @@ public class SlideShowView extends FrameLayout {
      * 填充ViewPager的页面适配器
      *
      */
-    private class MyPagerAdapter  extends PagerAdapter{
+    private class MyPagerAdapter  extends PagerAdapter {
 
         @Override
         public void destroyItem(View container, int position, Object object) {
@@ -222,7 +223,7 @@ public class SlideShowView extends FrameLayout {
      * 当ViewPager中页面的状态发生改变时调用
      *
      */
-    private class MyPageChangeListener implements OnPageChangeListener{
+    private class MyPageChangeListener implements ViewPager.OnPageChangeListener {
 
         boolean isAutoPlay = false;
 
