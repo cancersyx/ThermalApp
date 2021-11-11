@@ -1,19 +1,16 @@
-package com.zhang.administrator.thermal.ui.acitivity;
+package com.zhang.administrator.thermal.ui;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.zhang.administrator.thermal.R;
-import com.zhang.administrator.thermal.ui.mine.SettingActivity;
-import com.zhang.administrator.thermal.view.CourseView;
-import com.zhang.administrator.thermal.view.MyInfoView;
+import com.zhang.administrator.thermal.ui.course.CourseView;
+import com.zhang.administrator.thermal.ui.mine.MyInfoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,13 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initEvent();
         initData();
 
-    }
-
-    private void initData() {
-        mTitleContainer.setBackgroundColor(Color.parseColor("#FF1592F2"));
-        mTitle.setText("热处理");
-        mBackTv.setVisibility(View.INVISIBLE);
-
+        selectBottomTab(0);
     }
 
 
@@ -57,6 +48,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mExerciseBtn = (Button) findViewById(R.id.btn_exercise);
         mDiscoveryBtn = (Button) findViewById(R.id.btn_discovery);
         mMineBtn = (Button) findViewById(R.id.btn_mine);
+
+    }
+
+    private void initData() {
+        mTitleContainer.setBackgroundColor(Color.parseColor("#FF1592F2"));
+        mTitle.setText("热处理");
+        mBackTv.setVisibility(View.INVISIBLE);
 
     }
 
@@ -91,13 +89,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private void selectBottomTab(int index){
+    private void selectBottomTab(int index) {
         removeAllView();
         createBodyView(index);
     }
 
     private void createBodyView(int index) {
-        switch (index){
+        switch (index) {
             case 0:
                 //课程界面
                 if (mCourseView == null) {

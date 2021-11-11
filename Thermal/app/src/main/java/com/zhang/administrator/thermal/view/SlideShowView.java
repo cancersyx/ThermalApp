@@ -20,6 +20,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
+
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -33,11 +34,10 @@ import androidx.viewpager.widget.ViewPager;
 /**
  * Created by Administrator on 2016/4/2.
  */
+
 /**
  * ViewPager实现的轮播图广告自定义视图，如京东首页的广告轮播图效果；
  * 既支持自动轮播页面也支持手势滑动切换页面
- *
- *
  */
 
 public class SlideShowView extends FrameLayout {
@@ -61,17 +61,16 @@ public class SlideShowView extends FrameLayout {
 
     private ViewPager viewPager;
     //当前轮播页
-    private int currentItem  = 0;
+    private int currentItem = 0;
     //定时任务
     private ScheduledExecutorService scheduledExecutorService;
 
     private Context context;
     //Handler
-    private Handler handler = new Handler(){
+    private Handler handler = new Handler() {
 
         @Override
         public void handleMessage(Message msg) {
-            // TODO Auto-generated method stub
             super.handleMessage(msg);
             viewPager.setCurrentItem(currentItem);
         }
@@ -79,13 +78,13 @@ public class SlideShowView extends FrameLayout {
     };
 
     public SlideShowView(Context context) {
-        this(context,null);
-        // TODO Auto-generated constructor stub
+        this(context, null);
     }
+
     public SlideShowView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
-        // TODO Auto-generated constructor stub
     }
+
     public SlideShowView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         this.context = context;
@@ -93,28 +92,31 @@ public class SlideShowView extends FrameLayout {
         initImageLoader(context);
 
         initData();
-        if(isAutoPlay){
+        if (isAutoPlay) {
             startPlay();
         }
 
     }
+
     /**
      * 开始轮播图切换
      */
-    private void startPlay(){
+    private void startPlay() {
         scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
-        scheduledExecutorService.scheduleAtFixedRate(new SlideShowTask(), 1, 4, TimeUnit.SECONDS);
+        scheduledExecutorService.scheduleAtFixedRate(new SlideShowTask(), 1, 5, TimeUnit.SECONDS);
     }
+
     /**
      * 停止轮播图切换
      */
-    private void stopPlay(){
+    private void stopPlay() {
         scheduledExecutorService.shutdown();
     }
+
     /**
      * 初始化相关Data
      */
-    private void initData(){
+    private void initData() {
         imageViewsList = new ArrayList<ImageView>();
         dotViewsList = new ArrayList<View>();
 
@@ -122,28 +124,42 @@ public class SlideShowView extends FrameLayout {
         new GetListTask().execute("");
         // initUI(context);
     }
+
     /**
      * 初始化Views等UI
      */
-    private void initUI(Context context){
-        if(imageUrls == null || imageUrls.length == 0)
-           return;
+    private void initUI(Context context) {
+        if (imageUrls == null || imageUrls.length == 0)
+            return;
 
         LayoutInflater.from(context).inflate(R.layout.layout_slideshow, this, true);
-
-        LinearLayout dotLayout = (LinearLayout)findViewById(R.id.dotLayout);
+        LinearLayout dotLayout = (LinearLayout) findViewById(R.id.dotLayout);
         dotLayout.removeAllViews();
-
         // 热点个数与图片特殊相等
         for (int i = 0; i < imageUrls.length; i++) {
-            ImageView view =  new ImageView(context);
-           view.setTag(imageUrls[i]);
-            if(i==0) //给一个默认图
-                view.setBackgroundResource(R.drawable.appmain_subject_1);
+            ImageView view = new ImageView(context);
+            view.setTag(imageUrls[i]);
+            if (i == 0){
+                //给一个默认图
+                //view.setBackgroundResource(R.drawable.img_banner_default);
+            }
+
+            //使用本地图片_@EWorld_20211110
+            //todo 记得将banner资源更新
+            if (i==0){
+                view.setBackgroundResource(R.drawable.img_banner_0);
+            }else if (i == 1){
+                view.setBackgroundResource(R.drawable.img_banner_1);
+            }else if (i==2){
+                view.setBackgroundResource(R.drawable.img_banner_2);
+            }else {
+                view.setBackgroundResource(R.drawable.img_banner_default);
+            }
+
             view.setScaleType(ScaleType.FIT_XY);
             imageViewsList.add(view);
 
-            ImageView dotView =  new ImageView(context);
+            ImageView dotView = new ImageView(context);
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT,
                     LayoutParams.WRAP_CONTENT);
             params.leftMargin = 4;
@@ -160,75 +176,64 @@ public class SlideShowView extends FrameLayout {
 
     /**
      * 填充ViewPager的页面适配器
-     *
      */
-    private class MyPagerAdapter  extends PagerAdapter {
+    private class MyPagerAdapter extends PagerAdapter {
 
         @Override
         public void destroyItem(View container, int position, Object object) {
-            // TODO Auto-generated method stub
             //((ViewPager)container).removeView((View)object);
-              ((ViewPager)container).removeView(imageViewsList.get(position));
+            ((ViewPager) container).removeView(imageViewsList.get(position));
         }
 
         @Override
         public Object instantiateItem(View container, int position) {
             ImageView imageView = imageViewsList.get(position);
-
             imageLoader.displayImage(imageView.getTag() + "", imageView);
-
-            ((ViewPager)container).addView(imageViewsList.get(position));
+            ((ViewPager) container).addView(imageViewsList.get(position));
             return imageViewsList.get(position);
         }
 
         @Override
         public int getCount() {
-            // TODO Auto-generated method stub
             return imageViewsList.size();
         }
 
         @Override
         public boolean isViewFromObject(View arg0, Object arg1) {
-            // TODO Auto-generated method stub
             return arg0 == arg1;
         }
+
         @Override
         public void restoreState(Parcelable arg0, ClassLoader arg1) {
-            // TODO Auto-generated method stub
 
         }
 
         @Override
         public Parcelable saveState() {
-            // TODO Auto-generated method stub
             return null;
         }
 
         @Override
         public void startUpdate(View arg0) {
-            // TODO Auto-generated method stub
 
         }
 
         @Override
         public void finishUpdate(View arg0) {
-            // TODO Auto-generated method stub
 
         }
 
     }
+
     /**
      * ViewPager的监听器
      * 当ViewPager中页面的状态发生改变时调用
-     *
      */
     private class MyPageChangeListener implements ViewPager.OnPageChangeListener {
-
         boolean isAutoPlay = false;
 
         @Override
         public void onPageScrollStateChanged(int arg0) {
-            // TODO Auto-generated method stub
             switch (arg0) {
                 case 1:// 手势滑动，空闲中
                     isAutoPlay = false;
@@ -251,20 +256,18 @@ public class SlideShowView extends FrameLayout {
 
         @Override
         public void onPageScrolled(int arg0, float arg1, int arg2) {
-            // TODO Auto-generated method stub
+
 
         }
 
         @Override
         public void onPageSelected(int pos) {
-            // TODO Auto-generated method stub
-
             currentItem = pos;
-            for(int i=0;i < dotViewsList.size();i++){
-                if(i == pos){
-                    ((View)dotViewsList.get(pos)).setBackgroundResource(R.drawable.dot_focus);
-                }else {
-                    ((View)dotViewsList.get(i)).setBackgroundResource(R.drawable.dot_blur);
+            for (int i = 0; i < dotViewsList.size(); i++) {
+                if (i == pos) {
+                    ((View) dotViewsList.get(pos)).setBackgroundResource(R.drawable.dot_focus);
+                } else {
+                    ((View) dotViewsList.get(i)).setBackgroundResource(R.drawable.dot_blur);
                 }
             }
         }
@@ -272,16 +275,15 @@ public class SlideShowView extends FrameLayout {
     }
 
     /**
-     *执行轮播图切换任务
-     *
+     * 执行轮播图切换任务
      */
-    private class SlideShowTask implements Runnable{
+    private class SlideShowTask implements Runnable {
 
         @Override
         public void run() {
             // TODO Auto-generated method stub
             synchronized (viewPager) {
-                currentItem = (currentItem+1)%imageViewsList.size();
+                currentItem = (currentItem + 1) % imageViewsList.size();
                 handler.obtainMessage().sendToTarget();
             }
         }
@@ -290,7 +292,6 @@ public class SlideShowView extends FrameLayout {
 
     /**
      * 销毁ImageView资源，回收内存
-     *
      */
     private void destoryBitmaps() {
 
@@ -307,7 +308,6 @@ public class SlideShowView extends FrameLayout {
 
     /**
      * 异步任务,获取数据
-     *
      */
     class GetListTask extends AsyncTask<String, Integer, Boolean> {
 
@@ -315,14 +315,11 @@ public class SlideShowView extends FrameLayout {
         protected Boolean doInBackground(String... params) {
             try {
                 // 这里一般调用服务端接口获取一组轮播图片，下面是从百度找的几个图片
-
-
-                        imageUrls = new String[]{
+                imageUrls = new String[]{
 //                        "http://image.zcool.com.cn/56/35/1303967876491.jpg",
 //                        "http://image.zcool.com.cn/59/54/m_1303967870670.jpg",
 //                        "http://image.zcool.com.cn/47/19/1280115949992.jpg",
 //                        "http://image.zcool.com.cn/59/11/m_1303967844788.jpg"
-//
                         "http://mg.h800.cn/upload/img/20151223/6358648295255505667701598.jpg",
                         "http://docs.ebdoor.com/Image/InfoContentImage/ProductDesc/2013/02/02/50/500050e3-57b7-4ea1-a522-fdf7928fe519.jpg",
                         "http://imgsrc.baidu.com/forum/pic/item/96dda144ad3459825dc8af050cf431adcaef84e3.jpg",
@@ -355,7 +352,10 @@ public class SlideShowView extends FrameLayout {
         // or you can create default configuration by
         // ImageLoaderConfiguration.createDefault(this);
         // method.
-        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(context).threadPriority(Thread.NORM_PRIORITY - 2).denyCacheImageMultipleSizesInMemory().discCacheFileNameGenerator(new Md5FileNameGenerator()).tasksProcessingOrder(QueueProcessingType.LIFO).writeDebugLogs() // Remove
+        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(context)
+                .threadPriority(Thread.NORM_PRIORITY - 2).denyCacheImageMultipleSizesInMemory()
+                .discCacheFileNameGenerator(new Md5FileNameGenerator())
+                .tasksProcessingOrder(QueueProcessingType.LIFO).writeDebugLogs() // Remove
                 // for
                 // release
                 // app

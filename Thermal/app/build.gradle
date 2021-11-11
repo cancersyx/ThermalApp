@@ -15,29 +15,53 @@ android {
         versionName "2.0.0"
     }
     buildTypes {
-        release {
+        debug{
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     lintOptions{
         abortOnError false
     }
+
     sourceSets {
         main {
             jniLibs.srcDirs = ['libs']
         }
     }
-}
-repositories{
-    flatDir{
-        dirs 'libs' //就是你放aar的目录地址
+
+    repositories{
+        flatDir{
+            dirs 'libs' //就是你放aar的目录地址
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "Thermal_${apkTime()}_.apk"
+        }
     }
 }
 
 
+def apkTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getDefault())
+}
+
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     //compile 'com.android.support:support-v4:23.2.1'
     //compile 'com.android.support:appcompat-v7:23.2.1'
@@ -46,24 +70,24 @@ dependencies {
 
     compile files('libs/universal-image-loader-1.8.6-with-sources.jar')
     //compile files('libs/MobCommons-2016.0303.1229.jar')
-    compile name: 'SMSSDK-2.0.2', ext: 'aar'
-    compile name: 'SMSSDKGUI-2.0.2', ext: 'aar'
+    implementation name: 'SMSSDK-2.0.2', ext: 'aar'
+    implementation name: 'SMSSDKGUI-2.0.2', ext: 'aar'
     //compile files('libs/mobAPI-1.0.4.jar')
     //compile files('libs/MobTools-2016.0510.1148.jar')
-    compile project(':MathView')
+    implementation project(':MathView')
     //compile files('libs/Bmob_Push_V0.9beta_20160520.jar')
     //以下SDK开发者请根据需要自行选择
 
     //bmob-sdk：Bmob的android sdk包，包含了Bmob的数据存储、文件等服务，以下是最新的bmob-sdk:
     //3.4.7依赖，其他诸如`org.apache.http.legacy`,如果你需要兼容Android6.0可自行添加
     //compile 'cn.bmob.android:bmob-sdk:3.4.7'
-    compile 'com.squareup.okhttp3:okhttp:3.2.0'
-    compile 'com.squareup.okio:okio:1.7.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    implementation 'com.squareup.okio:okio:1.7.0'
     //注：3.4.7的SDK将数据的加解密实现转移到了底层so中，请务必导入`libbmob.so`，否则无法使用BmobSDK。
     //3.4.6依赖，每个SDK对应特定版本的okhttp相关包，不可更改
     //compile 'cn.bmob.android:bmob-sdk:3.4.6'
-    compile 'com.squareup.okhttp:okhttp:2.4.0'
-    compile 'com.squareup.okio:okio:1.4.0'
+    //implementation 'com.squareup.okhttp:okhttp:2.4.0'
+    //implementation 'com.squareup.okio:okio:1.4.0'
     //注:bmob-sdk:3.4.6需要依赖okhttp（2.4.0）、okio（1.4.0），如果需要兼容Android6.0系统，则还需要添加support-v4（23.2.1）及org.apache.http.legacy包，具体可查看下面注释[2]的解释
 
     //bmob-push：Bmob的推送包
@@ -76,4 +100,8 @@ dependencies {
 
     //bmob-sms ：Bmob单独为短信服务提供的包
     //compile 'cn.bmob.android:bmob-sms:1.0.1'
+
+    implementation 'com.facebook.fresco:fresco:1.10.0'
+    implementation project(path: ':common')
+
 }

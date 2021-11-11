@@ -15,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zhang.administrator.thermal.R;
-import com.zhang.administrator.thermal.ui.acitivity.MainActivity;
+import com.zhang.administrator.thermal.ui.MainActivity;
 
 import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobUser;

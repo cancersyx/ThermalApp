@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:singleLine="true"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/white"
         android:textSize="20sp"
         tools:text="热处理" />
 

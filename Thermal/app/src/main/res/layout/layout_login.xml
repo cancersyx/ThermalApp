@@ -10,13 +10,13 @@
             android:id="@+id/login_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/back"
+            android:background="@drawable/selector_title_back"
             android:layout_marginLeft="5dp"
             android:layout_centerVertical="true"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/white"
             android:layout_centerInParent="true"
             android:textSize="22sp"
             android:text="登录"/>
@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/white"
             android:layout_marginRight="@dimen/pixen10"
             android:layout_centerInParent="true"
             android:layout_marginTop="3dp"
@@ -86,7 +86,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/btn_style"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/white"
         android:textSize="16sp"
         android:text="登录"/>
 

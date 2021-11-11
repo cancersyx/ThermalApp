@@ -14,7 +14,7 @@
         android:layout_weight="1"
         android:background="@drawable/btn_style"
         android:text="课程"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/selector_bottom_tab"
         android:textSize="18sp" />
 
     <View
@@ -30,7 +30,7 @@
         android:layout_weight="1"
         android:background="@drawable/btn_style"
         android:text="习题"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/selector_bottom_tab"
         android:textSize="18sp" />
 
     <View
@@ -46,7 +46,7 @@
         android:layout_weight="1"
         android:background="@drawable/btn_style"
         android:text="发现"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/selector_bottom_tab"
         android:textSize="18sp" />
 
     <View
@@ -62,7 +62,7 @@
         android:layout_weight="1"
         android:background="@drawable/btn_style"
         android:text="我的"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/selector_bottom_tab"
         android:textSize="18sp" />
 
 </LinearLayout>

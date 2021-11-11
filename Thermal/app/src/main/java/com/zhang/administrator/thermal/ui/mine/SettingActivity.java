@@ -9,7 +9,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.zhang.administrator.thermal.R;
-import com.zhang.administrator.thermal.ui.acitivity.MainActivity;
+import com.zhang.administrator.thermal.ui.MainActivity;
 
 /**
  * Created by Administrator on 2016/4/6.

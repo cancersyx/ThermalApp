@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.zhang.administrator.thermal.bean.ListItem;
 import com.zhang.administrator.thermal.R;
+import com.zhang.administrator.thermal.ui.MainActivity;
 
 import java.util.ArrayList;
 

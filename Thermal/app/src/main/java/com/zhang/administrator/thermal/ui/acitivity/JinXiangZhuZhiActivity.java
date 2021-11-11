@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.zhang.administrator.thermal.R;
+import com.zhang.administrator.thermal.ui.MainActivity;
 
 /**
  * Created by Administrator on 2016/4/6.
@@ -40,7 +41,7 @@ public class JinXiangZhuZhiActivity extends Activity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.IB_back:
-                startActivity(new Intent(JinXiangZhuZhiActivity.this,MainActivity.class));
+                startActivity(new Intent(JinXiangZhuZhiActivity.this, MainActivity.class));
                 finish();
                 break;
         }

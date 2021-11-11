@@ -18,11 +18,27 @@
         android:layout_below="@+id/slideshowView"
         android:ellipsize="marquee"
         android:focusable="true"
-        android:focusableInTouchMode="true"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
         android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="10dp"
         android:paddingTop="5dp"
+        android:paddingRight="10dp"
         android:scrollHorizontally="true"
         android:singleLine="true"
         android:text="@string/tv_content"
         android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#E4E4E4" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/course_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>

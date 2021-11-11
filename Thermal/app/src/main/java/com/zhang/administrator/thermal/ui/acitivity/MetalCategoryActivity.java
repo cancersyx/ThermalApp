@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.zhang.administrator.thermal.R;
+import com.zhang.administrator.thermal.ui.MainActivity;
 
 /**
  * Created by Administrator on 2016/4/6.
@@ -40,7 +41,7 @@ public class MetalCategoryActivity extends Activity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.Category_back:
-                startActivity(new Intent(MetalCategoryActivity.this,MainActivity.class));
+                startActivity(new Intent(MetalCategoryActivity.this, MainActivity.class));
                 break;
             case R.id.iron:
                 startActivity(new Intent(this, IronActivity.class));

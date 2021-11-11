@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.zhang.administrator.thermal.R;
+import com.zhang.administrator.thermal.ui.MainActivity;
 
 import io.github.kexanie.library.MathView;
 
@@ -76,7 +77,7 @@ public class FormulaActivity extends Activity {
         mFormulaBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FormulaActivity.this,MainActivity.class));
+                startActivity(new Intent(FormulaActivity.this, MainActivity.class));
             }
         });
     }

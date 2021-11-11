@@ -25,7 +25,6 @@ public class ListViewAdapter extends BaseAdapter {
      */
     @Override
     public int getCount() {
-        // TODO Auto-generated method stub
         return mList.size();
     }
 
@@ -34,7 +33,6 @@ public class ListViewAdapter extends BaseAdapter {
      */
     @Override
     public Object getItem(int position) {
-        // TODO Auto-generated method stub
         return mList.get(position);
     }
 
@@ -43,7 +41,6 @@ public class ListViewAdapter extends BaseAdapter {
      */
     @Override
     public long getItemId(int position) {
-        // TODO Auto-generated method stub
         return position;
     }
 

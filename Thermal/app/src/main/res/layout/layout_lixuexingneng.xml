@@ -17,7 +17,7 @@
             android:paddingLeft="5dp"
             android:paddingRight="15dp"
             android:paddingBottom="12dp"
-            android:src="@drawable/back"/>
+            android:src="@drawable/selector_title_back"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

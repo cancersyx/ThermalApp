@@ -11,13 +11,13 @@
             android:id="@+id/register_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/back"
+            android:background="@drawable/selector_title_back"
             android:layout_marginLeft="5dp"
             android:layout_centerVertical="true"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/white"
             android:layout_centerInParent="true"
             android:textSize="22sp"
             android:text="注册"/>
@@ -140,7 +140,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/btn_style"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/white"
             android:textSize="16sp"
             android:text="注册"/>
 

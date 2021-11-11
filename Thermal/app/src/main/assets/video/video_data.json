@@ -1,0 +1,44 @@
+[
+  {
+    "chapterId": 1,
+    "videoId": "1",
+    "title": "第1章 绪论 ",
+    "secondTitle": "",
+    "videoPath": "https://www.bilibili.com/video/BV1jt411F7cb?p=1"
+  },
+  {
+    "chapterId": 1,
+    "videoId": "2",
+    "title": "第1章 ",
+    "secondTitle": "",
+    "videoPath": "/sdcard/012.mp4"
+  },
+  {
+    "chapterId": 2,
+    "videoId": "1",
+    "title": "第2章 ",
+    "secondTitle": "",
+    "videoPath": "/sdcard/021.mp4"
+  },
+  {
+    "chapterId": 2,
+    "videoId": "2",
+    "title": "第2章 ",
+    "secondTitle": "",
+    "videoPath": "/sdcard/022.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "1",
+    "title": "第3章 ",
+    "secondTitle": "",
+    "videoPath": "/sdcard/031.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "2",
+    "title": "第3章",
+    "secondTitle": "",
+    "videoPath": "/sdcard/032.mp4"
+  }
+]

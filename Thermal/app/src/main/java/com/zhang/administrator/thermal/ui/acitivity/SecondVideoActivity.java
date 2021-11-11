@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.VideoView;
 
 import com.zhang.administrator.thermal.R;
+import com.zhang.administrator.thermal.ui.MainActivity;
 
 
 /**
@@ -51,7 +52,7 @@ public class SecondVideoActivity extends Activity implements View.OnClickListene
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.First_Video_back:
-                startActivity(new Intent(SecondVideoActivity.this,MainActivity.class));
+                startActivity(new Intent(SecondVideoActivity.this, MainActivity.class));
                 finish();
                 break;
             case R.id.play:

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#FFFFFF"
-    tools:context=".ui.acitivity.MainActivity">
+    tools:context=".ui.MainActivity">
 
     <include layout="@layout/layout_title" />
 
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/ll_bottom_bar"
-        android:background="@color/colorWhite" />
+        android:background="@color/white" />
 
     <include layout="@layout/layout_bottom" />
 

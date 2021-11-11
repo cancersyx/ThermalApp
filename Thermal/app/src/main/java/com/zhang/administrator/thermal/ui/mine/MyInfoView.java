@@ -1,4 +1,4 @@
-package com.zhang.administrator.thermal.view;
+package com.zhang.administrator.thermal.ui.mine;
 
 import android.app.Activity;
 import android.view.LayoutInflater;

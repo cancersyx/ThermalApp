@@ -18,7 +18,7 @@
             android:paddingLeft="5dp"
             android:paddingRight="15dp"
             android:paddingBottom="12dp"
-            android:src="@drawable/back"/>
+            android:src="@drawable/selector_title_back"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="8dp"
             android:clickable="true"
-            android:src="@drawable/head" />
+            android:src="@drawable/icon_portrait" />
         <TextView
             android:id="@+id/show_userName"
             android:layout_width="wrap_content"
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:src="@drawable/go"/>
+            android:src="@drawable/icon_next"/>
     </RelativeLayout>
     <View  android:layout_height="1px"
         android:layout_width="match_parent"
@@ -103,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:src="@drawable/go"/>
+            android:src="@drawable/icon_next"/>
     </RelativeLayout>
     <View  android:layout_height="1px"
         android:layout_width="match_parent"
@@ -126,7 +126,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:src="@drawable/go"/>
+            android:src="@drawable/icon_next"/>
     </RelativeLayout>
     <View  android:layout_height="1px"
         android:layout_width="match_parent"
@@ -148,7 +148,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:src="@drawable/go"/>
+            android:src="@drawable/icon_next"/>
     </RelativeLayout>
     <View  android:layout_height="1px"
         android:layout_width="match_parent"
@@ -170,7 +170,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:src="@drawable/go"/>
+            android:src="@drawable/icon_next"/>
     </RelativeLayout>
    <Button
        android:id="@+id/btnLoginOut"
@@ -178,7 +178,7 @@
        android:layout_height="wrap_content"
        android:background="@drawable/btn_style"
        android:layout_marginTop="10dp"
-       android:textColor="@color/colorWhite"
+       android:textColor="@color/white"
        android:visibility="gone"
        android:text="退出账号"/>
 
