@@ -1,44 +1,58 @@
 [
   {
+    "chapterId": 0,
+    "videoId": "1",
+    "title": "第0章 绪论 ",
+    "secondTitle": "材料及材料科学",
+    "videoPath": "https://vfx.mtime.cn/Video/2019/01/15/mp4/190115161611510728_480.mp4"
+  },
+  {
+    "chapterId": 0,
+    "videoId": "2",
+    "title": "第0章 绪论",
+    "secondTitle": "我国古代热处理的发展",
+    "videoPath": ""
+  },
+  {
+    "chapterId": 0,
+    "videoId": "3",
+    "title": "第0章 绪论",
+    "secondTitle": "工程材料分类",
+    "videoPath": ""
+  },
+  {
     "chapterId": 1,
     "videoId": "1",
-    "title": "第1章 绪论 ",
-    "secondTitle": "",
-    "videoPath": "https://www.bilibili.com/video/BV1jt411F7cb?p=1"
-  },
-  {
-    "chapterId": 1,
-    "videoId": "2",
-    "title": "第1章 ",
-    "secondTitle": "",
-    "videoPath": "/sdcard/012.mp4"
-  },
-  {
-    "chapterId": 2,
-    "videoId": "1",
-    "title": "第2章 ",
-    "secondTitle": "",
-    "videoPath": "/sdcard/021.mp4"
-  },
-  {
-    "chapterId": 2,
-    "videoId": "2",
-    "title": "第2章 ",
-    "secondTitle": "",
+    "title": "第1章 材料的性能",
+    "secondTitle": "拉伸实验与材料的力学性能",
     "videoPath": "/sdcard/022.mp4"
   },
   {
-    "chapterId": 3,
-    "videoId": "1",
-    "title": "第3章 ",
-    "secondTitle": "",
+    "chapterId": 1,
+    "videoId": "2",
+    "title": "第1章 材料的性能 ",
+    "secondTitle": "材料的硬度",
     "videoPath": "/sdcard/031.mp4"
   },
   {
-    "chapterId": 3,
+    "chapterId": 1,
+    "videoId": "3",
+    "title": "第1章 材料的性能",
+    "secondTitle": "材料的物化性能与工艺性能",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 2,
+    "videoId": "1",
+    "title": "第2章 材料的结构",
+    "secondTitle": "奇异的金属键",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 2,
     "videoId": "2",
-    "title": "第3章",
-    "secondTitle": "",
+    "title": "第2章 材料的结构",
+    "secondTitle": "纯金属的晶体结构",
     "videoPath": "/sdcard/032.mp4"
   }
 ]

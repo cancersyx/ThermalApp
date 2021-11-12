@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.zhang.administrator.thermal.R;
 import com.zhang.administrator.thermal.ui.BaseActivity;
+import com.zsf.common.OnItemClickListener;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -23,6 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -66,6 +68,7 @@ public class VideoListActivity extends BaseActivity {
 
         mVideoAdapter = new VideoListAdapter();
         mRecyclerView.setAdapter(mVideoAdapter);
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mVideoList = new ArrayList<>();
         mVideoAdapter.addItems(mVideoList);
@@ -76,7 +79,7 @@ public class VideoListActivity extends BaseActivity {
         mIntroTab.setOnClickListener(v -> {
             mRecyclerView.setVisibility(View.GONE);
             mIntroScroll.setVisibility(View.VISIBLE);
-            mIntroTab.setBackgroundColor(Color.parseColor("#30B4FF"));
+            mIntroTab.setBackgroundColor(Color.parseColor("#FD3A3A"));
             mVideoTab.setBackgroundColor(Color.parseColor("#FFFFFF"));
             mIntroTab.setTextColor(Color.parseColor("#FFFFFF"));
             mVideoTab.setTextColor(Color.parseColor("#000000"));
@@ -85,10 +88,11 @@ public class VideoListActivity extends BaseActivity {
             mRecyclerView.setVisibility(View.VISIBLE);
             mIntroScroll.setVisibility(View.GONE);
             mIntroTab.setBackgroundColor(Color.parseColor("#FFFFFF"));
-            mVideoTab.setBackgroundColor(Color.parseColor("#30B4FF"));
+            mVideoTab.setBackgroundColor(Color.parseColor("#FD3A3A"));
             mIntroTab.setTextColor(Color.parseColor("#000000"));
             mVideoTab.setTextColor(Color.parseColor("#FFFFFF"));
         });
+        mVideoAdapter.setItemClickListener(item -> VideoPlayActivity.startActivity(VideoListActivity.this, item.videoPath));
     }
 
     private void initData() {

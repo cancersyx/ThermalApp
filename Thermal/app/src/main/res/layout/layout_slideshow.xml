@@ -20,14 +20,14 @@
             android:id="@+id/v_dot1"
             android:layout_width="8dp"
             android:layout_height="8dp"
-            android:background="@drawable/dot_focus" />
+            android:background="@drawable/icon_dot_selected" />
 
         <View
             android:id="@+id/v_dot2"
             android:layout_width="8dp"
             android:layout_height="8dp"
             android:layout_marginLeft="5dp"
-            android:background="@drawable/dot_blur" />
+            android:background="@drawable/icon_dot_noraml" />
 
     </LinearLayout>
 </RelativeLayout>

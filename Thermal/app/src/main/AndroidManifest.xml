@@ -58,6 +58,7 @@
         <activity android:name=".ui.acitivity.ThirdVideoActivity"/>
         <activity android:name=".ui.acitivity.FourthVideoActivity"/>
         <activity android:name=".ui.course.VideoListActivity" />
+        <activity android:name=".ui.course.VideoPlayActivity" />
 
     </application>
 

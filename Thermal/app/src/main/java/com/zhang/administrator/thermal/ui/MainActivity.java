@@ -3,7 +3,6 @@ package com.zhang.administrator.thermal.ui;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -14,11 +13,11 @@ import com.zhang.administrator.thermal.ui.mine.MyInfoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
     private RelativeLayout mTitleContainer;
     private TextView mBackTv;
     private TextView mTitle;
-    private Button mDiscoveryBtn, mCourseBtn, mExerciseBtn, mMineBtn;
+    private TextView mCourseTv, mExerciseTv, mDiscoveryTv, mMineTv;
     private TextView marquee;
     private FrameLayout mBodyContainer;
 
@@ -33,8 +32,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initView();
         initEvent();
         initData();
-
         selectBottomTab(0);
+        setBottomTabStatus(0);
     }
 
 
@@ -42,12 +41,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mTitleContainer = findViewById(R.id.rl_title_container);
         mTitle = findViewById(R.id.tv_title);
         mBackTv = findViewById(R.id.tv_title_back);
-        marquee = (TextView) findViewById(R.id.tv_marquee);
+        marquee = findViewById(R.id.tv_marquee);
         mBodyContainer = findViewById(R.id.main_body);
-        mCourseBtn = (Button) findViewById(R.id.btn_course);
-        mExerciseBtn = (Button) findViewById(R.id.btn_exercise);
-        mDiscoveryBtn = (Button) findViewById(R.id.btn_discovery);
-        mMineBtn = (Button) findViewById(R.id.btn_mine);
+        mCourseTv = findViewById(R.id.btn_course);
+        mExerciseTv = findViewById(R.id.btn_exercise);
+        mDiscoveryTv = findViewById(R.id.btn_discovery);
+        mMineTv = findViewById(R.id.btn_mine);
 
     }
 
@@ -60,10 +59,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initEvent() {
         mBackTv.setOnClickListener(this);
-        mCourseBtn.setOnClickListener(this);
-        mExerciseBtn.setOnClickListener(this);
-        mDiscoveryBtn.setOnClickListener(this);
-        mMineBtn.setOnClickListener(this);
+        mCourseTv.setOnClickListener(this);
+        mExerciseTv.setOnClickListener(this);
+        mDiscoveryTv.setOnClickListener(this);
+        mMineTv.setOnClickListener(this);
 
 
     }
@@ -75,18 +74,58 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 finish();
                 break;
             case R.id.btn_course:
+                clearBottomTabStatus();
                 selectBottomTab(0);
+                setBottomTabStatus(0);
                 break;
             case R.id.btn_exercise:
+                clearBottomTabStatus();
                 selectBottomTab(1);
+                setBottomTabStatus(1);
                 break;
             case R.id.btn_discovery:
+                clearBottomTabStatus();
                 selectBottomTab(2);
+                setBottomTabStatus(2);
                 break;
             case R.id.btn_mine:
+                clearBottomTabStatus();
                 selectBottomTab(3);
+                setBottomTabStatus(3);
                 break;
         }
+    }
+
+    private void setBottomTabStatus(int index){
+        switch (index){
+            case 0:
+                mCourseTv.setTextColor(getResources().getColor(R.color.color_bottom_tab_txt_select));
+                //mCourseTv.setBackgroundColor(getResources().getColor(R.color.color_bottom_tab_txt_select));
+                break;
+            case 1:
+                mExerciseTv.setTextColor(getResources().getColor(R.color.color_bottom_tab_txt_select));
+                //mExerciseTv.setBackgroundColor(getResources().getColor(R.color.color_bottom_tab_txt_select));
+                break;
+            case 2:
+                mDiscoveryTv.setTextColor(getResources().getColor(R.color.color_bottom_tab_txt_select));
+                //mDiscoveryTv.setBackgroundColor(getResources().getColor(R.color.color_bottom_tab_txt_select));
+                break;
+            case 3:
+                mMineTv.setTextColor(getResources().getColor(R.color.color_bottom_tab_txt_select));
+                //mMineTv.setBackgroundColor(getResources().getColor(R.color.color_bottom_tab_txt_select));
+                break;
+        }
+    }
+
+    private void clearBottomTabStatus() {
+        mCourseTv.setTextColor(getResources().getColor(R.color.color_bottom_tab_txt_normal));
+        mExerciseTv.setTextColor(getResources().getColor(R.color.color_bottom_tab_txt_normal));
+        mDiscoveryTv.setTextColor(getResources().getColor(R.color.color_bottom_tab_txt_normal));
+        mMineTv.setTextColor(getResources().getColor(R.color.color_bottom_tab_txt_normal));
+        //mCourseTv.setBackgroundColor(getResources().getColor(R.color.color_bottom_tab_normal));
+        //mExerciseTv.setBackgroundColor(getResources().getColor(R.color.color_bottom_tab_normal));
+        //mDiscoveryTv.setBackgroundColor(getResources().getColor(R.color.color_bottom_tab_normal));
+        //mMineTv.setBackgroundColor(getResources().getColor(R.color.color_bottom_tab_normal));
     }
 
     private void selectBottomTab(int index) {

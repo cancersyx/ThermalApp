@@ -1,12 +1,6 @@
 package com.zhang.administrator.thermal.view;
 
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
@@ -26,6 +20,12 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.zhang.administrator.thermal.R;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
@@ -103,7 +103,7 @@ public class SlideShowView extends FrameLayout {
      */
     private void startPlay() {
         scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
-        scheduledExecutorService.scheduleAtFixedRate(new SlideShowTask(), 1, 5, TimeUnit.SECONDS);
+        scheduledExecutorService.scheduleAtFixedRate(new SlideShowTask(), 1, 6, TimeUnit.SECONDS);
     }
 
     /**
@@ -139,20 +139,20 @@ public class SlideShowView extends FrameLayout {
         for (int i = 0; i < imageUrls.length; i++) {
             ImageView view = new ImageView(context);
             view.setTag(imageUrls[i]);
-            if (i == 0){
+            if (i == 0) {
                 //给一个默认图
                 //view.setBackgroundResource(R.drawable.img_banner_default);
             }
 
             //使用本地图片_@EWorld_20211110
             //todo 记得将banner资源更新
-            if (i==0){
+            if (i == 0) {
                 view.setBackgroundResource(R.drawable.img_banner_0);
-            }else if (i == 1){
+            } else if (i == 1) {
                 view.setBackgroundResource(R.drawable.img_banner_1);
-            }else if (i==2){
+            } else if (i == 2) {
                 view.setBackgroundResource(R.drawable.img_banner_2);
-            }else {
+            } else {
                 view.setBackgroundResource(R.drawable.img_banner_default);
             }
 
@@ -265,9 +265,9 @@ public class SlideShowView extends FrameLayout {
             currentItem = pos;
             for (int i = 0; i < dotViewsList.size(); i++) {
                 if (i == pos) {
-                    ((View) dotViewsList.get(pos)).setBackgroundResource(R.drawable.dot_focus);
+                    ((View) dotViewsList.get(pos)).setBackgroundResource(R.drawable.icon_dot_selected);
                 } else {
-                    ((View) dotViewsList.get(i)).setBackgroundResource(R.drawable.dot_blur);
+                    ((View) dotViewsList.get(i)).setBackgroundResource(R.drawable.icon_dot_noraml);
                 }
             }
         }

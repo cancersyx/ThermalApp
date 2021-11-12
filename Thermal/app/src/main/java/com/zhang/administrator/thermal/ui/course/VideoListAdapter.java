@@ -22,7 +22,7 @@ public class VideoListAdapter extends BaseRecyclerViewAdapter<VideoBean, VideoLi
     @Override
     protected void bindDataToItemView(ViewHolder holder, VideoBean item) {
         holder.icon.setBackgroundResource(R.drawable.icon_course_bar);
-        holder.title.setText(item.title);
+        holder.title.setText(item.secondTitle);
     }
 
     @NonNull

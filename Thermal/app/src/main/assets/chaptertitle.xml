@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <infos>
     <course id="1">
-        <imgtitle>第01讲</imgtitle>
+        <imgtitle>第00讲</imgtitle>
         <title>绪论</title>
         <intro>材料是人类用于制造物品、器件、构件、机器或 其它产品的那些物质。材料是物质，但不是所有 的物质都可以称为材料。材料是人类赖以生存和
             发展的物质基础
         </intro>
     </course>
     <course id="2">
-        <imgtitle>第02讲</imgtitle>
-        <title>第2章</title>
+        <imgtitle>第01讲</imgtitle>
+        <title>第1章 材料的性能</title>
         <intro></intro>
     </course>
 
     <course id="3">
-        <imgtitle>第03讲</imgtitle>
-        <title></title>
+        <imgtitle>第02讲</imgtitle>
+        <title>第2章 材料的结构</title>
         <intro></intro>
     </course>
     <course id="4">
-        <imgtitle>第04讲</imgtitle>
-        <title></title>
+        <imgtitle>第03讲</imgtitle>
+        <title>第3章 材料的凝固与相图</title>
         <intro></intro>
     </course>
 
     <course id="5">
-        <imgtitle>第05讲</imgtitle>
-        <title></title>
+        <imgtitle>第04讲</imgtitle>
+        <title>第4章 金属的塑形变形与再结晶</title>
         <intro></intro>
     </course>
 
