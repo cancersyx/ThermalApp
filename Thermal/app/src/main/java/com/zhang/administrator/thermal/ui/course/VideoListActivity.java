@@ -92,7 +92,7 @@ public class VideoListActivity extends BaseActivity {
             mIntroTab.setTextColor(Color.parseColor("#000000"));
             mVideoTab.setTextColor(Color.parseColor("#FFFFFF"));
         });
-        mVideoAdapter.setItemClickListener(item -> VideoPlayActivity.startActivity(VideoListActivity.this, item.videoPath));
+        mVideoAdapter.setItemClickListener(item -> VideoPlayActivity.startActivity(VideoListActivity.this, item.videoPath, item.secondTitle));
     }
 
     private void initData() {

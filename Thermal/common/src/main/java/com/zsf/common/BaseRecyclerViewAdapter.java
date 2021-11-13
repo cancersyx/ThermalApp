@@ -18,15 +18,12 @@ public abstract class BaseRecyclerViewAdapter<D, V extends RecyclerView.ViewHold
 
     protected final List<D> mDataSet = new ArrayList<>();
     private OnItemClickListener<D> mItemClickListener;
-    protected int mClickPosition;
 
     public void setItemClickListener(OnItemClickListener<D> itemClickListener) {
         mItemClickListener = itemClickListener;
     }
 
-    public int getCurrentPos() {
-        return mClickPosition;
-    }
+
 
     protected D getItem(int position) {
         return mDataSet.get(position);
@@ -66,7 +63,6 @@ public abstract class BaseRecyclerViewAdapter<D, V extends RecyclerView.ViewHold
     private void initItemViewClickListener(V holder, D item) {
         holder.itemView.setOnClickListener(v -> {
             if (mItemClickListener != null) {
-                mClickPosition = holder.getAdapterPosition();
                 mItemClickListener.onClick(item);
             }
         });

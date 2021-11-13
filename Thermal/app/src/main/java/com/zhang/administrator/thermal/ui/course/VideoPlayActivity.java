@@ -63,13 +63,19 @@ public class VideoPlayActivity extends BaseActivity {
 
     private void initData() {
         String videoUrl = getIntent().getStringExtra("video_path");
+        String videoTitle = getIntent().getStringExtra("video_title");
         LUtils.d(TAG, ">>>>>> videoUrl = " + videoUrl);
         mSeekBar.setProgress(0);
+        mTitleTv.setText(videoTitle);
         mPlayDuration.setText("00/00");
         mVideoView.setKeepScreenOn(true);//防止屏幕变暗
-        mVideoView.setVideoURI(Uri.parse(videoUrl));
+        //
+        String url = "android.resource://" + getPackageName() + "/" + R.raw.big_bird;
+        mVideoView.setVideoURI(Uri.parse(url));
         mVideoView.setMediaController(mController);
         mController.setMediaPlayer(mVideoView);
+
+        mVideoView.start();
     }
 
     private void initEvent() {
@@ -106,9 +112,10 @@ public class VideoPlayActivity extends BaseActivity {
     }
 
 
-    public static void startActivity(Context context, String videoPath) {
+    public static void startActivity(Context context, String videoPath, String videoTitle) {
         Intent intent = new Intent(context, VideoPlayActivity.class);
         intent.putExtra("video_path", videoPath);
+        intent.putExtra("video_title", videoTitle);
         context.startActivity(intent);
     }
 
