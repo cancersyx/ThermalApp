@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.zhang.administrator.thermal.R;
 import com.zhang.administrator.thermal.ui.course.CourseView;
 import com.zhang.administrator.thermal.ui.exercise.ExerciseView;
+import com.zhang.administrator.thermal.ui.find.FindView;
 import com.zhang.administrator.thermal.ui.mine.MyInfoView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +25,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private CourseView mCourseView;
     private ExerciseView mExerciseView;
+    private FindView mFindView;
     private MyInfoView mMyInfoView;
 
 
@@ -159,7 +161,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case 2:
                 //发现界面
-
+                if (mFindView == null){
+                    mFindView = new FindView(this);
+                    mBodyContainer.addView(mFindView.getView());
+                }else {
+                    mFindView.getView();
+                }
+                mFindView.showView();
                 break;
             case 3:
                 //我的界面

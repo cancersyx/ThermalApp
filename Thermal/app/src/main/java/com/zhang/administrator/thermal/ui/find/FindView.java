@@ -41,12 +41,12 @@ public class FindView {
 
     private void initView() {
         mCurrentView = mInflater.inflate(R.layout.view_layout_find, null);
-        mRecyclerView = mCurrentView.findViewById(R.id.exercise_recycler);
+        mRecyclerView = mCurrentView.findViewById(R.id.find_recycler);
         mBackTv = mCurrentView.findViewById(R.id.tv_title_back);
         mTitle = mCurrentView.findViewById(R.id.tv_title);
         mBackTv.setVisibility(View.INVISIBLE);
 
-        mFindAdapter = new FindAdapter();
+        mFindAdapter = new FindAdapter(mActivity);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(mActivity));
         mRecyclerView.addItemDecoration(new DividerItemDecoration(mActivity, DividerItemDecoration.VERTICAL));
         mRecyclerView.setAdapter(mFindAdapter);

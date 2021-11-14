@@ -8,6 +8,8 @@ import android.widget.TextView;
 import com.zhang.administrator.thermal.R;
 import com.zhang.administrator.thermal.ui.BaseActivity;
 
+import java.util.List;
+
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,9 +18,12 @@ import androidx.recyclerview.widget.RecyclerView;
  * 2021/11/13
  */
 public class ExerciseDetailActivity extends BaseActivity {
+    private static final String TAG = "ExerciseDetailActivity";
     private TextView mBack;
     private TextView mTitle;
     private RecyclerView mRecyclerView;
+
+    private List<ExerciseBean> mExerciseList;
 
 
     @Override
@@ -28,6 +33,14 @@ public class ExerciseDetailActivity extends BaseActivity {
         initView();
         initEvent();
         initData();
+    }
+
+    private void initView() {
+        mBack = findViewById(R.id.tv_title_back);
+        mTitle = findViewById(R.id.tv_title);
+        mRecyclerView = findViewById(R.id.question_recycler_view);
+
+
     }
 
     private void initEvent() {
@@ -40,13 +53,7 @@ public class ExerciseDetailActivity extends BaseActivity {
         mTitle.setText(chapterTitle);
     }
 
-    private void initView() {
-        mBack = findViewById(R.id.tv_title_back);
-        mTitle = findViewById(R.id.tv_title);
-        mRecyclerView = findViewById(R.id.question_recycler_view);
 
-
-    }
 
     public static void startActivity(Context context, int chapterId, String chapterTitle) {
         Intent intent = new Intent(context, ExerciseDetailActivity.class);

@@ -15,10 +15,10 @@
     <color name="color_F5F5F5">#F5F5F5</color>
 
     <color name="color_FD3A3A">#FD3A3A</color>
-    <color name="color_bottom_tab_normal">#D8D8D8</color>
+    <color name="color_bottom_tab_normal">#666666</color>
     <color name="color_bottom_tab_select">#FD3A3A</color>
 
-    <color name="color_bottom_tab_txt_normal">#D8D8D8</color>
+    <color name="color_bottom_tab_txt_normal">#666666</color>
     <color name="color_bottom_tab_txt_select">#FD3A3A</color>
 
 

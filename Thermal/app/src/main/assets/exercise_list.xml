@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercise_list>
+    <exercise_item>
+        <id>1</id>
+        <title>第1章 材料的性能</title>
+        <question_number>共计5题</question_number>
+    </exercise_item>
+    <exercise_item>
+        <id>2</id>
+        <title>第2章 材料的结构</title>
+        <question_number>共计5题</question_number>
+    </exercise_item>
+    <exercise_item>
+        <id>3</id>
+        <title>第3章 材料的凝固与相图</title>
+        <question_number>共计5题</question_number>
+    </exercise_item>
+    <exercise_item>
+        <id>4</id>
+        <title>第4章 金属的塑性变形与再结晶</title>
+        <question_number>共计5题</question_number>
+    </exercise_item>
+    <exercise_item>
+        <id>5</id>
+        <title>第5章 钢的热处理</title>
+        <question_number>共计5题</question_number>
+    </exercise_item>
+    <exercise_item>
+        <id>6</id>
+        <title>第6章 工业用钢</title>
+        <question_number>共计5题</question_number>
+    </exercise_item>
+    <exercise_item>
+        <id>7</id>
+        <title>第7章 铸铁</title>
+        <question_number>共计5题</question_number>
+    </exercise_item>
+    <exercise_item>
+        <id>8</id>
+        <title>第8章 </title>
+        <question_number>共计5题</question_number>
+    </exercise_item>
+</exercise_list>

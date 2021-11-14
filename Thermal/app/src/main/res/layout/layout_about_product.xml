@@ -1,42 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="@drawable/top_back">
+    <include layout="@layout/layout_title" />
 
-        <ImageView
-            android:id="@+id/About_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:paddingLeft="5dp"
-            android:paddingTop="12dp"
-            android:paddingRight="15dp"
-            android:paddingBottom="12dp"
-            android:src="@drawable/selector_title_back" />
+    <ImageView
+        android:id="@+id/iv_app_launcher"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/rl_title_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/icon_launcher" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="关于我们"
-            android:textColor="#ffffff"
-            android:textSize="22sp" />
-
-    </RelativeLayout>
-
+    <TextView
+        android:id="@+id/tv_app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_app_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text="V_1.1.0"
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_app_version"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:text="我们是希望可以将传统的知识以一种新的方式进行传授。"
-        android:textSize="22sp" />
+        android:layout_marginRight="10dp"
+        android:text="        我们是希望可以将传统的知识以一种新的方式进行传授。"
+        android:textSize="20sp" />
 
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/tv_app_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:autoLink="all"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/privacy_str"
+        android:textSize="14sp" />
+</RelativeLayout>

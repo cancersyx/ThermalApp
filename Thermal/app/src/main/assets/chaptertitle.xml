@@ -1,51 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <infos>
-    <course id="1">
+    <course id="0">
         <imgtitle>第00讲</imgtitle>
         <title>绪论</title>
-        <intro>材料是人类用于制造物品、器件、构件、机器或 其它产品的那些物质。材料是物质，但不是所有 的物质都可以称为材料。材料是人类赖以生存和
-            发展的物质基础
+        <intro>材料是人类用于制造物品、器件、构件、机器或 其它产品的那些物质。材料是物质，但不是所有的物质都可以称为材料。材料是人类赖以生存和发展的物质基础。
         </intro>
     </course>
-    <course id="2">
+    <course id="1">
         <imgtitle>第01讲</imgtitle>
         <title>第1章 材料的性能</title>
-        <intro></intro>
+        <intro>材料的性能一般可以分为使用性能和工艺性能两大类。</intro>
     </course>
 
-    <course id="3">
+    <course id="2">
         <imgtitle>第02讲</imgtitle>
         <title>第2章 材料的结构</title>
-        <intro></intro>
+        <intro>常见金属的晶体结构有体心立方、面心立方、密排立方等晶格类型。</intro>
     </course>
-    <course id="4">
+    <course id="3">
         <imgtitle>第03讲</imgtitle>
         <title>第3章 材料的凝固与相图</title>
-        <intro></intro>
+        <intro>
+            材料中使用较广泛的有金属材料，金属材料绝大多数用冶炼的方法生产出来，即首先得到的是液态，经过冷却后才得到固态，固态下材料的组织结构与从液态转变为固态的过程有关，从而也影响材料的性能。
+        </intro>
+    </course>
+
+    <course id="4">
+        <imgtitle>第04讲</imgtitle>
+        <title>第4章 金属的塑性变形与再结晶</title>
+        <intro>金属受的外力(切应力)超过屈服点时候，除继续发生弹性变形外，同时还发生永久变形，称为塑性变形。</intro>
     </course>
 
     <course id="5">
-        <imgtitle>第04讲</imgtitle>
-        <title>第4章 金属的塑形变形与再结晶</title>
-        <intro></intro>
+        <imgtitle>第05讲</imgtitle>
+        <title>钢的热处理</title>
+        <intro>
+            热处理是一种很重要的金属热加工的工艺方法，也是充分发挥金属材料性能潜力的重要手段。钢的热处理主要目的是改边钢的性能，包括使用性能及工艺性能。钢的热处理工艺特点是将钢加热到一定的温度，经一定时间的保温，然后以某种速度冷却下来，通过这样的工艺过程能使钢的性能发生改变。其基本工艺方法可分为退火、淬火及回火等。
+        </intro>
     </course>
 
     <course id="6">
         <imgtitle>第06讲</imgtitle>
-        <title></title>
-        <intro></intro>
+        <title>工业用钢</title>
+        <intro>工业用钢包括碳素钢(简称碳钢)和合金钢两大类。</intro>
     </course>
 
     <course id="7">
         <imgtitle>第07讲</imgtitle>
-        <title></title>
-        <intro></intro>
+        <title>铸铁</title>
+        <intro>铸铁是含碳量大于铸铁是含碳量大于2.11并含并含有较多硅锰硫磷等元素有较多硅锰硫磷等元素的多元铁基合金。具有优良的性能且生产简便、成本低廉，是应用最广泛的材料之一。</intro>
     </course>
 
     <course id="8">
         <imgtitle>第08讲</imgtitle>
-        <title></title>
-        <intro></intro>
+        <title>有色金属</title>
+        <intro>工业生产中，通常把铁及其合金称为黑色金属。把其他非铁金属及其合金称为有色金属。有色金属具有许多优良的特性，如特殊的电、磁、热性能，耐腐蚀性能及高的比强度，成为现代工业中不可缺少的工程金属材料。</intro>
     </course>
 
+    <course id="9">
+        <imgtitle>第09讲</imgtitle>
+        <title>机械零件选材</title>
+        <intro>学习和认识材料是为了更好的选择和使用材料。材料的选择与应用是设计与制造的重要环节，自始至终的影响整个设计制造过程。选材的基本原则：使用性能原则、工艺性能原则和经济性原则。</intro>
+    </course>
 </infos>

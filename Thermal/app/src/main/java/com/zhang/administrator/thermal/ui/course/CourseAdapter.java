@@ -19,9 +19,44 @@ public class CourseAdapter extends BaseRecyclerViewAdapter<CourseBean, CourseAda
 
     @Override
     protected void bindDataToItemView(ViewHolder holder, CourseBean item) {
-        holder.cover.setImageResource(R.drawable.img_chapter_0);
         holder.courseTitle.setText(item.courseTitle);
         holder.chapterTitle.setText(item.chapterTitle);
+        switch (item.chapterId) {
+            case 0:
+                holder.cover.setImageResource(R.drawable.img_chapter_00);
+                break;
+            case 1:
+                holder.cover.setImageResource(R.drawable.img_chapter_01);
+                break;
+            case 2:
+                holder.cover.setImageResource(R.drawable.img_chapter_02);
+                break;
+            case 3:
+                holder.cover.setImageResource(R.drawable.img_chapter_03);
+                break;
+            case 4:
+                holder.cover.setImageResource(R.drawable.img_chapter_04);
+                break;
+            case 5:
+                holder.cover.setImageResource(R.drawable.img_chapter_05);
+                break;
+            case 6:
+                holder.cover.setImageResource(R.drawable.img_chapter_06);
+                break;
+            case 7:
+                holder.cover.setImageResource(R.drawable.img_chapter_07);
+                break;
+            case 8:
+                holder.cover.setImageResource(R.drawable.img_chapter_08);
+                break;
+            case 9:
+                holder.cover.setImageResource(R.drawable.img_chapter_09);
+                break;
+            default:
+                holder.cover.setImageResource(R.drawable.img_chapter_0);
+                break;
+
+        }
     }
 
     @NonNull
