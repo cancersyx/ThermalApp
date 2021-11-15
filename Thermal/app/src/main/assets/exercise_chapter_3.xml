@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infos>
+    <exercises id="1">
+        <subject>1.‍绝大多数金属材料能够凝固为晶体是因为</subject>
+        <a>熔体的粘度值极小</a>
+        <b>熔体的粘度值极大</b>
+        <c>熔体的粘度值合适</c>
+        <d>熔体的密度值大</d>
+        <answer>3</answer>
+    </exercises>
+    <exercises id="2">
+        <subject>2.结晶时的过冷现象是金属的实际结晶温度比理论结晶温度</subject>
+        <a>低</a>
+        <b>高</b>
+        <c>相等</c>
+        <d>没有规律</d>
+        <answer>4</answer>
+    </exercises>
+    <exercises id="3">
+        <subject>3.金属材料结晶的必要条件</subject>
+        <a>温度相同</a>
+        <b>既不过热也不过冷</b>
+        <c>过热</c>
+        <d>过冷</d>
+        <answer>2</answer>
+    </exercises>
+    <exercises id="4">
+        <subject>4.晶体生长的主要方式是</subject>
+        <a>其他方式成长</a>
+        <b>均匀长大和枝晶长大同样重要</b>
+        <c>均匀长大</c>
+        <d>枝晶长大</d>
+        <answer>3</answer>
+    </exercises>
+    <exercises id="5">
+        <subject>5.影响晶核形成和成长速率的因素</subject>
+        <a>过冷度</a>
+        <b>过热度和未溶杂质</b>
+        <c>未溶杂质</c>
+        <d>过冷度和未溶杂质</d>
+        <answer>1</answer>
+    </exercises>
+    <exercises id="6">
+        <subject>6.对钢和铸铁进行各种热处理，以改变其组织和性能原因是</subject>
+        <a>能同素异构转变</a>
+        <b>不能同素异构转变</b>
+        <c>匀晶转变</c>
+        <d>其它转变</d>
+        <answer>1</answer>
+    </exercises>
+    <exercises id="7">
+        <subject>7.相图是通过材料在平衡条件下所测得的试验数据建立的，平衡条件是</subject>
+        <a>极其缓慢冷却</a>
+        <b>极其快速冷却</b>
+        <c>极其快速加热</c>
+        <d>冷却和加热速度相等</d>
+        <answer>1</answer>
+    </exercises>
+    <exercises id="8">
+        <subject>8.钢的含碳量为</subject>
+        <a>0.0218%~2.11%</a>
+        <b>0.77%~2.11%</b>
+        <c>0.0218%~0.77%</c>
+        <d>2.11%~6.69%C</d>
+        <answer>1</answer>
+    </exercises>
+    <exercises id="9">
+        <subject>9.铸铁含碳量为</subject>
+        <a>2.11%~6.69%</a>
+        <b>0.77%~2.11%</b>
+        <c>4.3%~6.69%</c>
+        <d>2.11%~4.3%</d>
+        <answer>1</answer>
+    </exercises>
+    <exercises id="10">
+        <subject>10.液态和固态均能够无限互溶的两组元素所构成的二元合金相图必定是</subject>
+        <a>共晶相图</a>
+        <b>匀晶相图</b>
+        <c>包晶相图</c>
+        <d>共析相图</d>
+        <answer>1</answer>
+    </exercises>
+</infos>
