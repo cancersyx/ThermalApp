@@ -9,11 +9,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.zhang.administrator.thermal.R;
+import com.zhang.administrator.thermal.ui.BaseActivity;
 
 /**
  * Created by Administrator on 2016/5/19.
  */
-public class AboutProductActivity extends Activity implements View.OnClickListener {
+public class AboutProductActivity extends BaseActivity implements View.OnClickListener {
     private static final String TAG = "AboutProductActivity";
     private TextView mBack;
     private TextView mTitle;

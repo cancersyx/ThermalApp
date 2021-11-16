@@ -42,6 +42,11 @@
 
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C3C3C3" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -55,8 +60,8 @@
                 android:id="@+id/tv_chapter_intro_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:lineSpacingMultiplier="1.5"
                 android:gravity="left"
+                android:lineSpacingMultiplier="1.5"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
         </ScrollView>
@@ -65,7 +70,7 @@
             android:id="@+id/video_recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
     </FrameLayout>
 

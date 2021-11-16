@@ -54,5 +54,334 @@
     "title": "第2章 材料的结构",
     "secondTitle": "纯金属的晶体结构",
     "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 2,
+    "videoId": "3",
+    "title": "第2章 材料的结构",
+    "secondTitle": "实际金属的晶体结构",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 2,
+    "videoId": "4",
+    "title": "第2章 材料的结构",
+    "secondTitle": "合金的晶体结构",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 2,
+    "videoId": "5",
+    "title": "第2章 材料的结构",
+    "secondTitle": "晶向指数和晶面指数",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "1",
+    "title": "第3章 材料的凝固与相图",
+    "secondTitle": "纯金属的结晶",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "2",
+    "title": "第3章 材料的凝固与相图",
+    "secondTitle": "结晶的必要条件",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "3",
+    "title": "第3章 材料的凝固与相图",
+    "secondTitle": "合金相图的建立",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "4",
+    "title": "第3章 材料的凝固与相图",
+    "secondTitle": "二元匀晶相图",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "5",
+    "title": "第3章 材料的凝固与相图",
+    "secondTitle": "二元共晶相图",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "6",
+    "title": "第3章 材料的凝固与相图",
+    "secondTitle": "包晶、共析和稳定化合物相图",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "7",
+    "title": "第3章 材料的凝固与相图",
+    "secondTitle": "铁碳合金相图的组元和相",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "8",
+    "title": "第3章 材料的凝固与相图",
+    "secondTitle": "铁碳合金相图的点线区",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "9",
+    "title": "第3章 材料的凝固与相图",
+    "secondTitle": "铁碳合金的分类",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "10",
+    "title": "第3章 材料的凝固与相图",
+    "secondTitle": "钢的结晶过程",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "11",
+    "title": "第3章 材料的凝固与相图",
+    "secondTitle": "白口铸铁的结晶过程",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "12",
+    "title": "第3章 材料的凝固与相图",
+    "secondTitle": "相图与性能",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 3,
+    "videoId": "13",
+    "title": "第3章 材料的凝固与相图",
+    "secondTitle": "铁碳合金相图和杠杆定律",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 4,
+    "videoId": "1",
+    "title": "第4章 金属的塑形变形与再结晶",
+    "secondTitle": "金属材料的塑性变形",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 4,
+    "videoId": "2",
+    "title": "第4章 金属的塑形变形与再结晶",
+    "secondTitle": "塑性变形对金属组织和性能的影响",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 4,
+    "videoId": "3",
+    "title": "第4章 金属的塑形变形与再结晶",
+    "secondTitle": "变形后金属的加热变化",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 4,
+    "videoId": "4",
+    "title": "第4章 金属的塑形变形与再结晶",
+    "secondTitle": "金属的热加工",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 4,
+    "videoId": "5",
+    "title": "第4章 金属的塑形变形与再结晶",
+    "secondTitle": "金属材料的强化方式",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 5,
+    "videoId": "1",
+    "title": "第5章 钢的热处理",
+    "secondTitle": "什么是热处理",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 5,
+    "videoId": "2",
+    "title": "第5章 钢的热处理",
+    "secondTitle": "钢的奥氏体化",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 5,
+    "videoId": "3",
+    "title": "第5章 钢的热处理",
+    "secondTitle": "钢在冷却时的转变",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 5,
+    "videoId": "4",
+    "title": "第5章 钢的热处理",
+    "secondTitle": "钢的等温冷却曲线",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 5,
+    "videoId": "5",
+    "title": "第5章 钢的热处理",
+    "secondTitle": "钢的连续冷却曲线",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 5,
+    "videoId": "6",
+    "title": "第5章 钢的热处理",
+    "secondTitle": "钢的退火与正火",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 5,
+    "videoId": "7",
+    "title": "第5章 钢的热处理",
+    "secondTitle": "钢的淬火",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 5,
+    "videoId": "8",
+    "title": "第5章 钢的热处理",
+    "secondTitle": "钢的回火",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 5,
+    "videoId": "9",
+    "title": "第5章 钢的热处理",
+    "secondTitle": "钢的淬硬性和淬透性",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 5,
+    "videoId": "10",
+    "title": "第5章 钢的热处理",
+    "secondTitle": "钢的表面热处理",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 6,
+    "videoId": "1",
+    "title": "第6章 工业用钢",
+    "secondTitle": "钢的分类",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 6,
+    "videoId": "2",
+    "title": "第6章 工业用钢",
+    "secondTitle": "工程结构钢",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 6,
+    "videoId": "3",
+    "title": "第6章 工业用钢",
+    "secondTitle": "机器零件用钢/渗碳钢",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 6,
+    "videoId": "4",
+    "title": "第6章 工业用钢",
+    "secondTitle": "机械零件用钢 / 调质钢 弹簧钢",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 6,
+    "videoId": "4",
+    "title": "第6章 工业用钢",
+    "secondTitle": "机械零件用钢 / 滚动钢 耐磨钢",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 6,
+    "videoId": "5",
+    "title": "第6章 工业用钢",
+    "secondTitle": "工具钢-1",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 6,
+    "videoId": "6",
+    "title": "第6章 工业用钢",
+    "secondTitle": "工具钢-2",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 7,
+    "videoId": "1",
+    "title": "第7章 铸铁",
+    "secondTitle": "灰口铸铁",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 7,
+    "videoId": "2",
+    "title": "第7章 铸铁",
+    "secondTitle": "球墨铸铁",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 7,
+    "videoId": "3",
+    "title": "第7章 铸铁",
+    "secondTitle": "蠕墨铸铁/可锻铸铁",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 8,
+    "videoId": "1",
+    "title": "第8章 有色金属",
+    "secondTitle": "工业纯铝",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 8,
+    "videoId": "2",
+    "title": "第8章 有色金属",
+    "secondTitle": "铝合金分类",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 8,
+    "videoId": "3",
+    "title": "第8章 有色金属",
+    "secondTitle": "铸造铝合金",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 9,
+    "videoId": "1",
+    "title": "第9章 机械零件选材",
+    "secondTitle": "典型零件的选材",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 9,
+    "videoId": "2",
+    "title": "第9章 机械零件选材",
+    "secondTitle": "选材原则",
+    "videoPath": "/sdcard/032.mp4"
+  },
+  {
+    "chapterId": 9,
+    "videoId": "3",
+    "title": "第9章 机械零件选材",
+    "secondTitle": "金属零件的失效",
+    "videoPath": "/sdcard/032.mp4"
   }
 ]
