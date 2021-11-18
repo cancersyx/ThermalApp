@@ -37,7 +37,7 @@
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/tv_subject_total"
+            android:id="@+id/tv_question_amount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"

@@ -22,7 +22,7 @@ public class ExerciseAdapter extends BaseRecyclerViewAdapter<ExerciseBean, Exerc
         holder.serialNum.setBackgroundResource(item.background);
         holder.serialNum.setText((holder.getAdapterPosition() + 1) + "");
         holder.title.setText(item.title);
-        holder.subject.setText(item.content);
+        holder.subjectAmount.setText(item.questionAmount);
     }
 
     @NonNull
@@ -35,13 +35,13 @@ public class ExerciseAdapter extends BaseRecyclerViewAdapter<ExerciseBean, Exerc
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView serialNum;
         TextView title;
-        TextView subject;
+        TextView subjectAmount;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             serialNum = itemView.findViewById(R.id.tv_serial_number);
             title = itemView.findViewById(R.id.tv_exercise_title);
-            subject = itemView.findViewById(R.id.tv_subject_total);
+            subjectAmount = itemView.findViewById(R.id.tv_question_amount);
         }
     }
 

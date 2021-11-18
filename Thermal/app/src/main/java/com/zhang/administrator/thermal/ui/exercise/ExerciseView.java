@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.zhang.administrator.thermal.R;
-import com.zsf.common.OnItemClickListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,42 +62,42 @@ public class ExerciseView {
             switch (i) {
                 case 0:
                     bean.title = "第1章 材料的性能";
-                    bean.content = "共计5题";
+                    bean.questionAmount = "共计5题";
                     bean.background = R.drawable.img_serial_number_bg;
                     break;
                 case 1:
                     bean.title = "第2章 材料的结构";
-                    bean.content = "共计5题";
+                    bean.questionAmount = "共计5题";
                     bean.background = R.drawable.img_serial_number_bg_2;
                     break;
                 case 2:
                     bean.title = "第3章 材料的凝固与相图";
-                    bean.content = "共计5题";
+                    bean.questionAmount = "共计5题";
                     bean.background = R.drawable.img_serial_number_bg_3;
                     break;
                 case 3:
                     bean.title = "第4章 金属的塑形变形与再结晶";
-                    bean.content = "共计5题";
+                    bean.questionAmount = "共计5题";
                     bean.background = R.drawable.img_serial_number_bg_4;
                     break;
                 case 4:
                     bean.title = "第5章 钢的热处理";
-                    bean.content = "共计5题";
+                    bean.questionAmount = "共计5题";
                     bean.background = R.drawable.img_serial_number_bg;
                     break;
                 case 5:
                     bean.title = "第6章 工业用钢";
-                    bean.content = "共计5题";
+                    bean.questionAmount = "共计5题";
                     bean.background = R.drawable.img_serial_number_bg_2;
                     break;
                 case 6:
                     bean.title = "第7章 服务";
-                    bean.content = "共计5题";
+                    bean.questionAmount = "共计5题";
                     bean.background = R.drawable.img_serial_number_bg_3;
                     break;
                 case 7:
                     bean.title = "第8章 铸铁";
-                    bean.content = "共计5题";
+                    bean.questionAmount = "共计5题";
                     bean.background = R.drawable.img_serial_number_bg_4;
                     break;
                /* case 8:

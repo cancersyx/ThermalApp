@@ -115,14 +115,14 @@ public class LoginActivity extends Activity implements View.OnClickListener {
  //                       startActivity(new Intent(Login_Activity.this, MainActivity.class));
 //                        testGetCurrentUser();
                         LayoutInflater factory = LayoutInflater.from(LoginActivity.this);
-                        final View view2 = factory.inflate(R.layout.layout_set, null);
+                        final View view2 = factory.inflate(R.layout.layout_setting, null);
                         RelativeLayout rlLoginOut = (RelativeLayout) view2.findViewById(R.id.rl_login);
                         rlLoginOut.setVisibility(View.INVISIBLE);
 
                        // mRlLoginOut.setVisibility(View.VISIBLE);
 
                         //mBtnLoginOut.setVisibility(View.VISIBLE);
-                        mHeadPhotoLayout= (LinearLayout) view.inflate(LoginActivity.this,R.layout.layout_set,null);
+                        mHeadPhotoLayout= (LinearLayout) view.inflate(LoginActivity.this,R.layout.layout_setting,null);
                         mHeadPhotoLayout.setVisibility(View.VISIBLE);
 
                     }

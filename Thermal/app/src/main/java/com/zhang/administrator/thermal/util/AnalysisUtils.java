@@ -7,6 +7,7 @@ import android.widget.ImageView;
 
 
 import com.zhang.administrator.thermal.ui.course.CourseBean;
+import com.zhang.administrator.thermal.ui.exercise.ExerciseBean;
 
 import org.xmlpull.v1.XmlPullParser;
 
@@ -32,11 +33,11 @@ public class AnalysisUtils {
         return userName;
     }
 
-   /* public static List<ExercisesBean> getExercisesInfos(InputStream is) throws Exception {
+    public static List<ExerciseBean> getExercisesInfos(InputStream is) throws Exception {
         XmlPullParser parser = Xml.newPullParser();
         parser.setInput(is, "utf-8");
-        List<ExercisesBean> exercisesInfos = null;
-        ExercisesBean exercisesInfo = null;
+        List<ExerciseBean> exercisesInfos = null;
+        ExerciseBean exercisesInfo = null;
         int type = parser.getEventType();
         while (type != XmlPullParser.END_DOCUMENT) {
             switch (type) {
@@ -44,12 +45,12 @@ public class AnalysisUtils {
                     if ("infos".equals(parser.getName())) {
                         exercisesInfos = new ArrayList<>();
                     } else if ("exercises".equals(parser.getName())) {
-                        exercisesInfo = new ExercisesBean();
+                        exercisesInfo = new ExerciseBean();
                         String ids = parser.getAttributeValue(0);
                         exercisesInfo.subjectId = Integer.parseInt(ids);
                     } else if ("subject".equals(parser.getName())) {
                         String subject = parser.nextText();
-                        exercisesInfo.subject = subject;
+                        exercisesInfo.questionSubject = subject;
                     } else if ("a".equals(parser.getName())) {
                         String a = parser.nextText();
                         exercisesInfo.a = a;
@@ -77,7 +78,7 @@ public class AnalysisUtils {
             type = parser.next();
         }
         return exercisesInfos;
-    }*/
+    }
 
     public static List<CourseBean> getCourseList(InputStream is) throws Exception {
         XmlPullParser parse = Xml.newPullParser();

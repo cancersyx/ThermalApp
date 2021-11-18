@@ -31,7 +31,7 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_registerf);
+        setContentView(R.layout.layout_register);
         Bmob.initialize(this, APPID);
         initView();
         initListener();

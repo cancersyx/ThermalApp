@@ -22,7 +22,7 @@ public class SettingActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_set);
+        setContentView(R.layout.layout_setting);
 
         initView();
     }
