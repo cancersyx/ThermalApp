@@ -3,6 +3,7 @@ package com.zhang.administrator.thermal.ui.exercise;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.zhang.administrator.thermal.R;
@@ -21,7 +22,7 @@ import androidx.recyclerview.widget.RecyclerView;
  * Created by EWorld
  * 2021/11/13
  */
-public class ExerciseDetailActivity extends BaseActivity {
+public class ExerciseDetailActivity extends BaseActivity implements ExercisesDetailAdapter.OnClickOptionListener {
     private static final String TAG = "ExerciseDetailActivity";
     private TextView mBack;
     private TextView mTitle;
@@ -45,7 +46,7 @@ public class ExerciseDetailActivity extends BaseActivity {
         mTitle = findViewById(R.id.tv_title);
         mRecyclerView = findViewById(R.id.question_recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        mDetailAdapter = new ExercisesDetailAdapter();
+        mDetailAdapter = new ExercisesDetailAdapter(this);
         mRecyclerView.setAdapter(mDetailAdapter);
 
         mExerciseList = new ArrayList<>();
@@ -83,5 +84,25 @@ public class ExerciseDetailActivity extends BaseActivity {
         intent.putExtra("chapter_id", chapterId);
         intent.putExtra("chapter_title", chapterTitle);
         context.startActivity(intent);
+    }
+
+    @Override
+    public void onSelectA(int position, ImageView viewA, ImageView viewB, ImageView viewC, ImageView viewD) {
+
+    }
+
+    @Override
+    public void onSelectB(int position, ImageView viewA, ImageView viewB, ImageView viewC, ImageView viewD) {
+
+    }
+
+    @Override
+    public void onSelectC(int position, ImageView viewA, ImageView viewB, ImageView viewC, ImageView viewD) {
+
+    }
+
+    @Override
+    public void onSelectD(int position, ImageView viewA, ImageView viewB, ImageView viewC, ImageView viewD) {
+
     }
 }

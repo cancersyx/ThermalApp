@@ -1,5 +1,6 @@
 package com.zhang.administrator.thermal.ui;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -12,10 +13,13 @@ import com.zhang.administrator.thermal.ui.course.CourseView;
 import com.zhang.administrator.thermal.ui.exercise.ExerciseView;
 import com.zhang.administrator.thermal.ui.find.FindView;
 import com.zhang.administrator.thermal.ui.mine.MyInfoView;
+import com.zhang.administrator.thermal.util.LUtils;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
+    private static final String TAG = "MainActivity";
     private RelativeLayout mTitleContainer;
     private TextView mBackTv;
     private TextView mTitle;
@@ -185,6 +189,25 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private void removeAllView() {
         for (int i = 0; i < mBodyContainer.getChildCount(); i++) {
             mBodyContainer.getChildAt(i).setVisibility(View.GONE);
+        }
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (data != null){
+            //从设置界面或登录界面传递过来的登录状态
+            boolean loginStatus = data.getBooleanExtra("is_login",false);
+            LUtils.d(TAG,">>>>>> loginStatus = " + loginStatus);
+            if (loginStatus){
+                //登录成功
+                // TODO: 2021/11/22
+            }
+
+            if (mMyInfoView != null){
+                mMyInfoView.setLoginParams(loginStatus);
+            }
         }
     }
 }

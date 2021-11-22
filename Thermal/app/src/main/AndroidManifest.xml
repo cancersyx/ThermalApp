@@ -61,6 +61,8 @@
         <activity android:name=".ui.course.VideoPlayActivity" />
         <activity android:name=".ui.exercise.ExerciseDetailActivity" />
         <activity android:name=".ui.find.FindDetailActivity" />
+        <activity android:name=".ui.mine.LoginNewActivity" />
+        <activity android:name=".ui.mine.ModifyPasswordActivity" />
 
     </application>
 

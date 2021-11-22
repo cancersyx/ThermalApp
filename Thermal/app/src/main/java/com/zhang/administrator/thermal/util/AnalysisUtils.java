@@ -20,6 +20,7 @@ import java.util.List;
  * 2021/10/14
  */
 public class AnalysisUtils {
+    private static final String TAG = "AnalysisUtils";
 
     /**
      * SharedPreferences中读取用户名
@@ -28,8 +29,9 @@ public class AnalysisUtils {
      * @return
      */
     public static String readLoginUserName(Context context) {
-        SharedPreferences sp = context.getSharedPreferences("loginInfo", Context.MODE_PRIVATE);
-        String userName = sp.getString("loginUserName", "");
+        SharedPreferences sp = context.getSharedPreferences("login_info", Context.MODE_PRIVATE);
+        String userName = sp.getString("login_user_name", "");
+        LUtils.d(TAG,">>>>>> userName = " + userName);
         return userName;
     }
 

@@ -11,7 +11,7 @@ public class MD5Utils {
     public static String md5(String text) {
         MessageDigest digest = null;
         try {
-            digest = MessageDigest.getInstance("md5");
+            digest = MessageDigest.getInstance("md5");//数据加密对象
             byte[] result = digest.digest(text.getBytes());
             StringBuilder sb = new StringBuilder();
             for (byte b : result) {

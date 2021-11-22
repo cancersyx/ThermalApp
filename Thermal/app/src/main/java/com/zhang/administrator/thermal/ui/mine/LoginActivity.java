@@ -1,6 +1,5 @@
 package com.zhang.administrator.thermal.ui.mine;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +16,7 @@ import android.widget.Toast;
 import com.zhang.administrator.thermal.R;
 import com.zhang.administrator.thermal.ui.MainActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
 import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.listener.SaveListener;
@@ -24,7 +24,7 @@ import cn.bmob.v3.listener.SaveListener;
 /**
  * Created by Administrator on 2016/4/25.
  */
-public class LoginActivity extends Activity implements View.OnClickListener {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     public static String APPID = "612c964de8567f521833d1182ceb8c2e";
     private ImageButton mBack;
     private TextView mRegister;
@@ -40,7 +40,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_login);
+        setContentView(R.layout.activity_login);
         Bmob.initialize(this, APPID);
         initView();
         initListener();
@@ -78,60 +78,17 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.login_back:
-                startActivity(new Intent(this, SettingActivity.class));
                 finish();
                 break;
             case R.id.register:
                 startActivity(new Intent(this, RegisterActivity.class));
-                finish();
                 break;
             case R.id.btn_login:
 
                 String username = et_username.getText().toString();
                 String password = et_password.getText().toString();
 
-                if(username.isEmpty()){
-                    Toast.makeText(LoginActivity.this, "登录账号不能为空。", Toast.LENGTH_LONG).show();
-                    return;
-                }
-                if (password.isEmpty()){
-                    Toast.makeText(LoginActivity.this,"登录密码不能为空。",Toast.LENGTH_LONG).show();
-                    return;
-                }
-                BmobUser user = new BmobUser();
-                user.setUsername(username);
-                user.setPassword(password);
 
-                user.login(this, new SaveListener() {
-
-                    @Override
-                    public void onSuccess() {
-//                        BmobUser user = BmobUser.getCurrentUser(context);
-                        Toast.makeText(LoginActivity.this, "登录成功", Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent();
-                        intent.putExtra("zz", "登录界面");
-                        intent.setClass(LoginActivity.this, MainActivity.class);
-                        startActivity(intent);
- //                       startActivity(new Intent(Login_Activity.this, MainActivity.class));
-//                        testGetCurrentUser();
-                        LayoutInflater factory = LayoutInflater.from(LoginActivity.this);
-                        final View view2 = factory.inflate(R.layout.layout_setting, null);
-                        RelativeLayout rlLoginOut = (RelativeLayout) view2.findViewById(R.id.rl_login);
-                        rlLoginOut.setVisibility(View.INVISIBLE);
-
-                       // mRlLoginOut.setVisibility(View.VISIBLE);
-
-                        //mBtnLoginOut.setVisibility(View.VISIBLE);
-                        mHeadPhotoLayout= (LinearLayout) view.inflate(LoginActivity.this,R.layout.layout_setting,null);
-                        mHeadPhotoLayout.setVisibility(View.VISIBLE);
-
-                    }
-
-                    @Override
-                    public void onFailure(int i, String s) {
-                        Toast.makeText(LoginActivity.this, "登录失败", Toast.LENGTH_LONG).show();
-                    }
-                });
 
                 break;
 

@@ -13,6 +13,9 @@
 
     <color name="bg">#F5F5F5</color>
     <color name="color_F5F5F5">#F5F5F5</color>
+    <color name="color_aaaaaa">#aaaaaa</color>
+    <color name="color_cfcfcf">#cfcfcf</color>
+    <color name="color_666666">#666666</color>
 
     <color name="color_FD3A3A">#FD3A3A</color>
     <color name="color_bottom_tab_normal">#666666</color>
