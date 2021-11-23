@@ -54,8 +54,7 @@ public class SettingActivity extends BaseActivity {
                     ModifyPasswordActivity.startActivity(SettingActivity.this);
                     break;
                 case R.id.rl_security_setting:
-                    // TODO: 2021/11/22 设置密保 
-
+                    FindPwdActivity.startActivity(SettingActivity.this,"security");
                     break;
                 case R.id.rl_exit_login:
                     Toast.makeText(SettingActivity.this, "退出登录成功", Toast.LENGTH_SHORT).show();

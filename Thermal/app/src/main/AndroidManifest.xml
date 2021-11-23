@@ -63,6 +63,7 @@
         <activity android:name=".ui.find.FindDetailActivity" />
         <activity android:name=".ui.mine.LoginNewActivity" />
         <activity android:name=".ui.mine.ModifyPasswordActivity" />
+        <activity android:name=".ui.mine.FindPwdActivity" />
 
     </application>
 

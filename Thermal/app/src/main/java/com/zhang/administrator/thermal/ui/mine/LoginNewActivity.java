@@ -68,7 +68,7 @@ public class LoginNewActivity extends BaseActivity implements View.OnClickListen
                 break;
             case R.id.tv_forget_pwd:
                 // TODO: 2021/11/22  找回密码
-
+                FindPwdActivity.startActivity(this);
                 break;
             case R.id.btn_login:
                 String username = mUserNameEt.getText().toString();

@@ -91,6 +91,12 @@ public class MyInfoView {
                 }
             }
         });
+        mCleanCache.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
         mAbout.setOnClickListener(v -> AboutProductActivity.startActivity(activity));
     }

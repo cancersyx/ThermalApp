@@ -63,13 +63,13 @@ def apkTime() {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.palette:palette:1.0.0'
-    testCompile 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
     //compile 'com.android.support:support-v4:23.2.1'
     //compile 'com.android.support:appcompat-v7:23.2.1'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.1.0'
 
-    compile files('libs/universal-image-loader-1.8.6-with-sources.jar')
+    implementation files('libs/universal-image-loader-1.8.6-with-sources.jar')
     //compile files('libs/MobCommons-2016.0303.1229.jar')
     implementation name: 'SMSSDK-2.0.2', ext: 'aar'
     implementation name: 'SMSSDKGUI-2.0.2', ext: 'aar'
