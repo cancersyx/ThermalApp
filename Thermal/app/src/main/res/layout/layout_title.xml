@@ -24,4 +24,20 @@
         android:textSize="20sp"
         tools:text="热处理" />
 
+    <TextView
+        android:id="@+id/tv_title_save"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="保存"
+        android:visibility="invisible"
+        tools:text="保存" />
+
+
 </RelativeLayout>

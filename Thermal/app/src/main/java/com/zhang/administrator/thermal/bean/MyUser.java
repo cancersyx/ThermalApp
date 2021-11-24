@@ -6,7 +6,10 @@ import cn.bmob.v3.BmobUser;
  * Created by Administrator on 2016/5/24.
  */
 public class MyUser extends BmobUser {
+    private String userName;
     private String nickName;
+    private String sex;
+    private String signature;
     private int age;
     private String address;
 
@@ -34,7 +37,27 @@ public class MyUser extends BmobUser {
         this.address = address;
     }
 
+    public String getUserName() {
+        return userName;
+    }
 
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
+    public String getSex() {
+        return sex;
+    }
 
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public String getSignature() {
+        return signature;
+    }
+
+    public void setSignature(String signature) {
+        this.signature = signature;
+    }
 }

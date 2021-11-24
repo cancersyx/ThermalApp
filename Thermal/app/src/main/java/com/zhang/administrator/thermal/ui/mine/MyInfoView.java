@@ -103,8 +103,7 @@ public class MyInfoView {
 
     private void openPersonView() {
         if (readLoginStatus()) {
-            // TODO: 2021/11/22  跳转到个人资料界面
-
+            UserInfoActivity.startActivity(activity);
         } else {
             //跳转到登录界面
             Intent intent = new Intent(activity, LoginNewActivity.class);
