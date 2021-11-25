@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -38,6 +39,9 @@ public class UserInfoActivity extends BaseActivity {
     private TextView mSignatureTv;
 
     private String mUserNameSp;
+    private static final int CHANGE_NICKNAME = 1;
+    private static final int CHANGE_SIGNATURE = 2;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -77,7 +81,12 @@ public class UserInfoActivity extends BaseActivity {
         mNickNameLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ChangeUserInfoActivity.startActivity(UserInfoActivity.this);
+               String nick = mNickNameTv.getText().toString();
+               Bundle bundle = new Bundle();
+               bundle.putString("content",nick);
+               bundle.putString("title","昵称");
+               bundle.putInt("flag",CHANGE_NICKNAME);
+               enterActivityForResult(ChangeUserInfoActivity.class,101,bundle);
             }
         });
         mSexLayout.setOnClickListener(new View.OnClickListener() {
@@ -89,7 +98,12 @@ public class UserInfoActivity extends BaseActivity {
         mSignatureLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ChangeUserInfoActivity.startActivity(UserInfoActivity.this);
+                String signature = mSignatureTv.getText().toString();
+                Bundle bundle = new Bundle();
+                bundle.putString("content",signature);
+                bundle.putString("title","签名");
+                bundle.putInt("flag",CHANGE_SIGNATURE);
+                enterActivityForResult(ChangeUserInfoActivity.class,102,bundle);
             }
         });
 
@@ -148,6 +162,40 @@ public class UserInfoActivity extends BaseActivity {
         DBUtils.getInstance(this).updateUserInfo("sex", sex, mUserNameSp);
     }
 
+    private void enterActivityForResult(Class<?> clazz, int requestCode, Bundle bundle) {
+        Intent intent = new Intent(this, clazz);
+        intent.putExtras(bundle);
+        startActivityForResult(intent, requestCode);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode){
+            case 101:
+                if (data != null){
+                    String newInfo = data.getStringExtra("nickName");
+                    if (TextUtils.isEmpty(newInfo)){
+                        return;
+                    }
+                    mNickNameTv.setText(newInfo);
+                    //更新数据库昵称
+                    DBUtils.getInstance(this).updateUserInfo("nickName",newInfo,mUserNameSp);
+                }
+                break;
+            case 102:
+                if (data != null){
+                    String newInfo = data.getStringExtra("signature");
+                    if (TextUtils.isEmpty(newInfo)){
+                        return;
+                    }
+                    mSignatureTv.setText(newInfo);
+                    //更新数据库昵称
+                    DBUtils.getInstance(this).updateUserInfo("signature",newInfo, mUserNameSp);
+                }
+                break;
+        }
+    }
 
     public static void startActivity(Context context) {
         Intent intent = new Intent(context, UserInfoActivity.class);
