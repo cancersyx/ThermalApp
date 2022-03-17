@@ -1,7 +1,6 @@
 package com.zhang.administrator.thermal.ui.mine;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -14,12 +13,7 @@ import android.widget.Toast;
 
 import com.zhang.administrator.thermal.R;
 import com.zhang.administrator.thermal.ui.BaseActivity;
-import com.zhang.administrator.thermal.util.MD5Utils;
-
-import org.w3c.dom.Text;
-
-import androidx.appcompat.app.AppCompatActivity;
-import cn.bmob.v3.Bmob;
+import com.zsf.common.MD5Utils;
 
 
 /**

@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import com.zhang.administrator.thermal.R;
 import com.zhang.administrator.thermal.ui.BaseActivity;
-import com.zhang.administrator.thermal.util.MD5Utils;
+import com.zsf.common.MD5Utils;
 
 import androidx.annotation.Nullable;
 

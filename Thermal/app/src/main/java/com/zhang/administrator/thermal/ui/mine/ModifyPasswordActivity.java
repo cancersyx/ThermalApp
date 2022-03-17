@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Message;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +14,7 @@ import android.widget.Toast;
 import com.zhang.administrator.thermal.R;
 import com.zhang.administrator.thermal.ui.BaseActivity;
 import com.zhang.administrator.thermal.util.AnalysisUtils;
-import com.zhang.administrator.thermal.util.MD5Utils;
+import com.zsf.common.MD5Utils;
 
 import androidx.annotation.Nullable;
 

@@ -1,4 +1,4 @@
-package com.zhang.administrator.thermal.util;
+package com.zsf.common;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -15,10 +15,10 @@ public class ApkUtil {
      * @param context
      * @return
      */
-    public static String getVersionName(Context context){
+    public static String getVersionName(Context context,String pkgName){
         String versionName = "";
         try {
-            PackageInfo packageInfo = context.getPackageManager().getPackageInfo(context.getPackageName(),0);
+            PackageInfo packageInfo = context.getPackageManager().getPackageInfo(pkgName,0);
             versionName = packageInfo.versionName;
             return versionName;
         } catch (PackageManager.NameNotFoundException e) {

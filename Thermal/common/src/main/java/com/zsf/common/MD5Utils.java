@@ -1,4 +1,4 @@
-package com.zhang.administrator.thermal.util;
+package com.zsf.common;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

@@ -66,6 +66,7 @@
         <activity android:name=".ui.mine.FindPwdActivity" />
         <activity android:name=".ui.mine.UserInfoActivity" />
         <activity android:name=".ui.mine.ChangeUserInfoActivity" />
+        <activity android:name=".ui.PrivacyActivity" />
 
     </application>
 

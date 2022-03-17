@@ -10,13 +10,12 @@ import android.widget.TextView;
 
 import com.zhang.administrator.thermal.R;
 import com.zhang.administrator.thermal.ui.course.CourseView;
-import com.zhang.administrator.thermal.ui.exercise.ExerciseView;
+import com.zhang.administrator.thermal.ui.exercise.BookSectionExerciseView;
 import com.zhang.administrator.thermal.ui.find.FindView;
 import com.zhang.administrator.thermal.ui.mine.MyInfoView;
-import com.zhang.administrator.thermal.util.LUtils;
+import com.zsf.common.LUtils;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
     private static final String TAG = "MainActivity";
@@ -28,7 +27,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private FrameLayout mBodyContainer;
 
     private CourseView mCourseView;
-    private ExerciseView mExerciseView;
+    private BookSectionExerciseView mBookSectionExerciseView;
     private FindView mFindView;
     private MyInfoView mMyInfoView;
 
@@ -155,13 +154,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case 1:
                 //习题界面
-                if (mExerciseView == null){
-                    mExerciseView = new ExerciseView(this);
-                    mBodyContainer.addView(mExerciseView.getView());
+                if (mBookSectionExerciseView == null){
+                    mBookSectionExerciseView = new BookSectionExerciseView(this);
+                    mBodyContainer.addView(mBookSectionExerciseView.getView());
                 }else {
-                    mExerciseView.getView();
+                    mBookSectionExerciseView.getView();
                 }
-                mExerciseView.showView();
+                mBookSectionExerciseView.showView();
                 break;
             case 2:
                 //发现界面

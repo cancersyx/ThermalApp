@@ -1,7 +1,6 @@
 package com.zhang.administrator.thermal.ui.course;
 
 import android.app.Activity;
-import android.content.res.TypedArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
@@ -9,8 +8,7 @@ import android.widget.TextView;
 import com.zhang.administrator.thermal.R;
 import com.zhang.administrator.thermal.bean.Concept;
 import com.zhang.administrator.thermal.util.AnalysisUtils;
-import com.zhang.administrator.thermal.util.LUtils;
-import com.zsf.common.OnItemClickListener;
+import com.zsf.common.LUtils;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

@@ -12,10 +12,12 @@ import com.zhang.administrator.thermal.util.TxtReader;
 
 import java.io.InputStream;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 /**
  * Created by Administrator on 2016/5/5.
  */
-public class FirstItemActivity extends Activity {
+public class FirstItemActivity extends AppCompatActivity {
     private TextView tv_item_first;
     private ImageView  IB_back;
 

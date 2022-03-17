@@ -15,7 +15,7 @@ import android.widget.VideoView;
 
 import com.zhang.administrator.thermal.R;
 import com.zhang.administrator.thermal.ui.BaseActivity;
-import com.zhang.administrator.thermal.util.LUtils;
+import com.zsf.common.LUtils;
 
 import androidx.annotation.Nullable;
 

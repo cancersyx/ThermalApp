@@ -18,7 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
  * Created by EWorld
  * 2021/11/13
  */
-public class ExerciseView {
+public class BookSectionExerciseView {
     private static final String TAG = "ExerciseView";
     private Activity mActivity;
     private LayoutInflater mInflater;
@@ -29,7 +29,7 @@ public class ExerciseView {
     private List<ExerciseBean> mExerciseList;
     private ExerciseAdapter mExerciseAdapter;
 
-    public ExerciseView(Activity activity) {
+    public BookSectionExerciseView(Activity activity) {
         this.mActivity = activity;
         mInflater = LayoutInflater.from(activity);
     }

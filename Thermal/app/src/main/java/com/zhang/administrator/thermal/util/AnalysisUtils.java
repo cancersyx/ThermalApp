@@ -8,6 +8,7 @@ import android.widget.ImageView;
 
 import com.zhang.administrator.thermal.ui.course.CourseBean;
 import com.zhang.administrator.thermal.ui.exercise.ExerciseBean;
+import com.zsf.common.LUtils;
 
 import org.xmlpull.v1.XmlPullParser;
 

@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import com.zhang.administrator.thermal.R;
 import com.zhang.administrator.thermal.ui.BaseActivity;
+import com.zhang.administrator.thermal.ui.PrivacyActivity;
+import com.zsf.common.ApkUtil;
 
 /**
  * Created by Administrator on 2016/5/19.
@@ -18,13 +20,14 @@ public class AboutProductActivity extends BaseActivity implements View.OnClickLi
     private static final String TAG = "AboutProductActivity";
     private TextView mBack;
     private TextView mTitle;
+    private TextView mAppName, mAppVersion;
     private TextView mPrivacyTv;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_about_product);
-
         initView();
         initListener();
         initData();
@@ -33,6 +36,8 @@ public class AboutProductActivity extends BaseActivity implements View.OnClickLi
     private void initView() {
         mBack = findViewById(R.id.tv_title_back);
         mTitle = findViewById(R.id.tv_title);
+        mAppName = findViewById(R.id.tv_app_name);
+        mAppVersion = findViewById(R.id.tv_app_version);
         mPrivacyTv = findViewById(R.id.tv_app_privacy);
 
 
@@ -45,6 +50,8 @@ public class AboutProductActivity extends BaseActivity implements View.OnClickLi
 
     private void initData() {
         mTitle.setText("关于");
+        String versionName = ApkUtil.getVersionName(this, this.getPackageName());
+        mAppVersion.setText("v_"+versionName);
     }
 
     @Override
@@ -54,8 +61,7 @@ public class AboutProductActivity extends BaseActivity implements View.OnClickLi
                 finish();
                 break;
             case R.id.tv_app_privacy:
-                // TODO: 2021/11/14  隐私政策显示
-
+                PrivacyActivity.startActivity(this);
                 break;
         }
     }
