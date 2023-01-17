@@ -16,5 +16,6 @@ public class ThermalApplication extends Application {
         super.onCreate();
         //Bmob.initialize(this, APPID);
 
+
     }
 }

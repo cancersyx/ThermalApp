@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
  * 2021/11/1
  */
 public abstract class BaseRecyclerViewAdapter<D, V extends RecyclerView.ViewHolder> extends RecyclerView.Adapter<V> {
-
+    private static final String TAG = "BaseRecyclerViewAdapter";
     protected final List<D> mDataSet = new ArrayList<>();
     private OnItemClickListener<D> mItemClickListener;
 
@@ -30,6 +30,7 @@ public abstract class BaseRecyclerViewAdapter<D, V extends RecyclerView.ViewHold
     }
 
     public synchronized void addItems(List<D> items) {
+        LUtils.d(TAG,">>>>> items.size = " + items.size());
         items.removeAll(mDataSet);
         mDataSet.clear();
         mDataSet.addAll(items);

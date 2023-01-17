@@ -10,9 +10,9 @@ android {
     defaultConfig {
         applicationId "com.zhang.administrator.thermal"
         minSdkVersion 19
-        targetSdkVersion 30
-        versionCode 2
-        versionName "2.0.0"
+        targetSdkVersion 32
+        versionCode 3
+        versionName "2.1.0"
     }
     buildTypes {
         debug{
@@ -68,6 +68,7 @@ dependencies {
     //compile 'com.android.support:appcompat-v7:23.2.1'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.1.0'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 
     implementation files('libs/universal-image-loader-1.8.6-with-sources.jar')
     //compile files('libs/MobCommons-2016.0303.1229.jar')
@@ -84,6 +85,9 @@ dependencies {
     //compile 'cn.bmob.android:bmob-sdk:3.4.7'
     implementation 'com.squareup.okhttp3:okhttp:3.2.0'
     implementation 'com.squareup.okio:okio:1.7.0'
+    //gson
+    implementation 'com.google.code.gson:gson:2.9.0'
+
     //注：3.4.7的SDK将数据的加解密实现转移到了底层so中，请务必导入`libbmob.so`，否则无法使用BmobSDK。
     //3.4.6依赖，每个SDK对应特定版本的okhttp相关包，不可更改
     //compile 'cn.bmob.android:bmob-sdk:3.4.6'
@@ -102,7 +106,10 @@ dependencies {
     //bmob-sms ：Bmob单独为短信服务提供的包
     //compile 'cn.bmob.android:bmob-sms:1.0.1'
 
-    implementation 'com.facebook.fresco:fresco:1.10.0'
+    //implementation 'com.facebook.fresco:fresco:1.10.0'
     implementation project(path: ':common')
+
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
 
 }

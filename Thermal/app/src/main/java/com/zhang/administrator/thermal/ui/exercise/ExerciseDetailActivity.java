@@ -57,12 +57,14 @@ public class ExerciseDetailActivity extends BaseActivity implements ExercisesDet
     private void initEvent() {
         mBack.setOnClickListener(v -> finish());
 
-
     }
 
     private void initData() {
         int chapterId = getIntent().getIntExtra("chapter_id", 0);
         String chapterTitle = getIntent().getStringExtra("chapter_title");
+        if (chapterTitle.length() >= 10) {
+            mTitle.setTextSize(16);
+        }
         mTitle.setText(chapterTitle);
 
         //从xml文件中获取习题数据

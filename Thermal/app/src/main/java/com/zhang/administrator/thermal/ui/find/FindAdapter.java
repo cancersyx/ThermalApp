@@ -1,8 +1,6 @@
 package com.zhang.administrator.thermal.ui.find;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.ReceiverCallNotAllowedException;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,8 +8,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.zhang.administrator.thermal.R;
 import com.zsf.common.BaseRecyclerViewAdapter;
+
+import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,7 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
  * Created by EWorld
  * 2021/11/13
  */
-public class FindAdapter extends BaseRecyclerViewAdapter<FindBean, FindAdapter.ViewHolder> {
+public class FindAdapter extends BaseRecyclerViewAdapter<FindBean.DataDTO, FindAdapter.ViewHolder> {
     private Context mContext;
 
     public FindAdapter(Context context) {
@@ -28,11 +29,13 @@ public class FindAdapter extends BaseRecyclerViewAdapter<FindBean, FindAdapter.V
     }
 
     @Override
-    protected void bindDataToItemView(ViewHolder holder, FindBean item) {
-        holder.thumb.setImageResource(item.thumb);
-        holder.title.setText(item.title);
-        for (int i = 0; i < item.topics.length; i++) {
-            holder.topicContainer.addView(createTopicView(item.topics[i]));
+    protected void bindDataToItemView(ViewHolder holder, FindBean.DataDTO item) {
+        Glide.with(mContext).load(item.getThumbnail_img_url().isEmpty() ? R.drawable.thumbnail_thermal_place_holder : item.getThumbnail_img_url()).into(holder.thumb);
+        holder.title.setText(item.getTitle());
+        List<String> keyWords = item.getKeywords();
+        holder.topicContainer.removeAllViews();
+        for (int j = 0; j < keyWords.size() && j <= 3; j++) {
+            holder.topicContainer.addView(createTopicView(keyWords.get(j)));
         }
     }
 
